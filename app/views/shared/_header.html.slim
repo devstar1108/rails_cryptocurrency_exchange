@@ -1,0 +1,22 @@
+.navbar.navbar-default.default class=(menu_styles if defined?(menu_styles) && !menu_styles.blank?)
+  .container
+    .navbar-header
+      .basic-wrapper
+        a.btn.responsive-menu data-target=".navbar-collapse" data-toggle="collapse"
+          i
+        .navbar-brand
+          a href="#{root_path}"
+            img.logo-light alt="" src="#" srcset="/logo.png 1x, /logo@2x.png 2x" /
+            img.logo-dark alt="" src="#" srcset="/logo-dark.png 1x, /logo-dark@2x.png 2x" /
+    nav.collapse.navbar-collapse
+      ul.nav.navbar-nav
+        /= top_nav_link(t('header.buy_or_sell'), root_path(anchor: 'market-statuses'), 'btc')
+        = render partial: 'shared/header_markets'
+        = top_nav_link(t('header.funds'), funds_path, 'money', controllers: ['funds']) if current_user
+        = top_nav_link(t('header.assets'), exchange_assets_path, 'bar-chart-o')
+        = top_nav_link(t('header.history'), order_history_path, 'book', controllers: ['history']) if current_user
+        = render partial: 'shared/header_account_balance' if current_user && controller_name == 'markets'
+        = render partial: 'shared/header_profile_setting' if current_user
+        = top_nav_link(t('header.signin'), (defined?(landing) && landing) ? '#sign-in-sign-up' : signin_path, 'sign-in', id: 'navlink-sign-in') unless current_user
+        = top_nav_link(t('header.signup'), (defined?(landing) && landing) ? '#sign-in-sign-up' : signup_path, 'user', id: 'navlink-sign-up') unless current_user
+        = render partial: 'shared/header_lang_sel'

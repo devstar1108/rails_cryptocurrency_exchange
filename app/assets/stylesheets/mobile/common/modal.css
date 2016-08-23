@@ -1,0 +1,277 @@
+
+.modal-backdrop.in {
+    opacity: 0.8;
+}
+
+.modal .close {
+    position: absolute;
+    padding: 20px;
+    color: #ffffff;
+    opacity: 1;
+    z-index: 10;
+}
+
+.modal .close:hover, .modal .close:focus {
+    color: #000000;
+}
+
+.modal .modal-dialog {
+    padding-top: 100px;
+    width: 310px;
+    margin: 10px auto;
+}
+
+.modal .modal-dialog .modal-body {
+    padding: 70px 15px 35px 15px;
+    text-align: center;
+}
+
+.modal-body .main-title {
+    text-transform: uppercase;
+    font-size: 26px;
+    color: #5c5c5c;
+}
+
+.modal-body .sub-title {
+    font-size: 13px;
+    color: #606060;
+    font-weight: normal;
+}
+
+.modal-mark {
+    position: relative;
+    height: 0;
+    top: -120px;
+}
+
+.modal-mark i {
+    padding: 26px;
+    font-size: 40px;
+    width: 92px;
+    color: #ffffff;
+    background: #4a90e2;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+}
+
+.modal-mark-outer-border {
+    border: 4px solid #4a90e2;
+    border-radius: 50%;
+    padding: 0px !important;
+    margin: 0px !important;
+    display: inline-block;
+}
+
+.custom-form {
+    margin-top: 45px;
+    text-align: left;
+}
+
+.custom-form * {
+    font-size: 12px !important;
+}
+
+.custom-form input[type='email'], .custom-form input[type='password'] {
+    height: 45px;
+}
+
+.custom-form button, .custom-form .btn, .custom-form input[type='submit'] {
+    height: 45px;
+    background-color: #179c17;
+    border: solid 1px #148314;
+    font-size: 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.custom-form a {
+    cursor: pointer;
+}
+
+.custom-form1 .manage-address-first-block {
+    float: left;
+    padding-left: 20px;
+    padding-right: 25px;
+    text-align: right;
+
+}
+
+.custom-form1 .manage-address-first-block label {
+    display: block;
+    font-size: 12px !important;
+    font-weight: bold;
+    color: #5b5b5b;
+
+}
+
+.custom-form1 .manage-address-second-block {
+    float: left;
+}
+
+.custom-form1 .manage-address-second-block label {
+    display: block;
+    font-size: 12px !important;
+    color: #5b5b5b;
+    font-weight: normal;
+
+}
+
+.custom-form1 .manage-address-third-block {
+    float: right;
+    margin-right: 15px;
+    line-height: 46px;
+}
+
+.custom-form1 .manage-address-third-block i {
+    display: inline-block;
+    font-size: 20px !important;
+    padding-left: 20px;
+}
+
+.custom-form1 .manage-address-third-block i.green {
+    color: #179c17;
+}
+
+.custom-form1 .manage-address-third-block i.red {
+    color: #dd3e38;
+}
+
+.custom-form1 .manage-address-third-block i.grey {
+    color: #262626;
+    opacity: 0.6;
+}
+
+.custom-form1 .manage-address-bottom-block {
+    margin-top: 30px;
+    padding: 30px 20px 0px 15px;
+    border-top: 1px solid #e3e3e3;
+}
+
+.custom-form1 .manage-address-bottom-block .leftinput {
+    float: left;
+    width: 48%;
+    margin: 0px 5px 0px 0px;
+}
+
+.custom-form1 .manage-address-bottom-block .rightinput {
+    float: right;;
+    width: 48%;
+    margin: 0px 0px 0px 5px;
+}
+
+.custom-form1 .manage-address-bottom-block button {
+    border-radius: 2px;
+    background-color: #179c17;
+    border: solid 0.5px #148314;
+    height: 40px;
+    font-size: 12px !important;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.custom-form1 {
+    margin-top: 45px;
+    text-align: left;
+}
+
+.custom-form1 * {
+    font-size: 13px !important;
+}
+
+.custom-form1 input[type='text'] {
+    height: 37px;
+}
+
+.custom-form1 button.btn-newaddr {
+    height: 37px;
+    background-color: #ffffff;
+    border: solid 1px #e3e3e3;
+    font-size: 12px;
+    color: #262626;
+}
+
+.custom-form1 button.btn-copy {
+    height: 37px;
+    background-color: #179c17;
+    border: solid 1px #148314;
+    font-size: 13px;
+    color: #262626;
+}
+
+.custom-form1 a {
+    cursor: pointer;
+}
+
+.withdraw-form .title-label {
+    font-size: 13px !important;
+    color: #646464;
+}
+
+.withdraw-form .title-button-label {
+    font-size: 11px !important;
+    color: #209a3e;
+    float: right;
+}
+
+.withdraw-form .title-button-label i {
+    font-size: 11px !important;
+    color: #286aa6;
+    padding-right: 3px;
+}
+
+.withdraw-form button {
+    height: 40px;
+    border-radius: 3px;
+    background-color: #179c17;
+    border: solid 1px #148314;
+    font-size: 14px;
+    color: #ffffff;
+}
+/*==============Tablet Part===========*/
+@media (min-width: 768px) {
+    .modal-body .main-title {
+        font-size: 30px;
+    }
+    .modal-body .sub-title {
+        font-size: 15px;
+    }
+    .modal-mark i {
+        padding: 30px;
+        font-size: 44px;
+        width: 100px;
+        color: #ffffff;
+        background: #4a90e2;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+    }
+    .custom-form * {
+        font-size: 16px !important;
+    }
+    .custom-form input[type='email'], .custom-form input[type='password'] {
+        height: 55px;
+    }
+    .custom-form button, .custom-form .btn, .custom-form input[type='submit'] {
+        height: 55px;
+        background-color: #179c17;
+        border: solid 1px #148314;
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+    .custom-form1 .manage-address-bottom-block .leftinput {
+        height: 55px;
+    }
+    .custom-form1 .manage-address-bottom-block .rightinput {
+        height: 55px;
+    }
+    .custom-form1 .manage-address-bottom-block button {
+        border-radius: 2px;
+        background-color: #179c17;
+        border: solid 0.5px #148314;
+        height: 55px;
+        font-size: 15px !important;
+        color: #ffffff;
+        font-weight: normal;
+    }
+
+}

@@ -1,0 +1,11 @@
+- unless @one_octacoins.empty?
+  .panel.panel-primary
+    .panel-heading: span = t('.one')
+    = render partial: 'table', locals: {octacoins: @one_octacoins}
+- unless @all_octacoins.empty?
+  .panel.panel-success
+    .panel-heading: span = t('.all')
+    = render partial: 'table', locals: {octacoins: @all_octacoins}
+
+- if @all_octacoins.empty? and @one_octacoins.empty?
+  h3.text-info.text-center = t('.empty')

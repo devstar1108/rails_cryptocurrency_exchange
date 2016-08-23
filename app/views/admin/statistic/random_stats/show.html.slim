@@ -1,0 +1,33 @@
+.row
+  .col-xs-24
+    .panel.panel-primary
+      .panel-heading Weekly Weighted Price
+      .panel-body
+        table.table.table-condensed
+          thead
+            tr
+              th Currency Name
+              th.text-right Weighted Price for Last Week
+              th.text-right Total Volume for Last Week
+              th.text-right Weighted Price for This Week
+              th.text-right Total Volume for This Week
+
+          tbody
+            - @currencies_weighted_price.each do |c|
+              - if !c.nil?
+                tr
+                  td: b = c[:name]
+                  - if c[:last_week_weighted_price] == -1
+                    td.text-right N/A
+                  - else
+                    td.text-right = number_with_precision(c[:last_week_weighted_price], :precision => 4)
+
+                  td.text-right = number_with_precision(c[:last_week_total_volume], :precision => 4)
+
+                  - if c[:this_week_weighted_price] == -1
+                    td.text-right N/A
+                  - else
+                    td.text-right = number_with_precision(c[:this_week_weighted_price], :precision => 4)
+
+                  td.text-right = number_with_precision(c[:this_week_total_volume], :precision => 4)
+

@@ -1,0 +1,86 @@
+doctype html
+html lang="en"
+  head
+    link href="/favicon.ico" rel="shortcut icon"
+    = include_gon
+    = stylesheet_link_tag 'market', media: "all"
+    = javascript_include_tag "market"
+    = javascript_include_tag "locales/#{I18n.locale}"
+    = render 'shared/html5'
+    = render 'shared/meta'
+    = csrf_meta_tags
+
+  body id='#{body_id}' data-lang="#{locale_name}"
+    audio preload='preload' id='success-fx'
+      source src="/sounds/success.mp3"
+
+    audio preload='preload' id='warning-fx'
+      source src="/sounds/warning.mp3"
+
+    = render partial: 'private/markets/header'
+    #wrap
+      .content
+        .row
+          .col-md-6
+            = render partial: 'market_list'
+            = render partial: 'market_trades'
+          .col-md-11
+            = render partial: 'candlestick'
+            = render partial: 'range_switch'
+            = render partial: 'indicator_switch'
+
+            - if ENV['CHAT_FEATURE']
+              #chat_tabs_wrapper.float
+                ul.nav.nav-tabs.tabs-right.sideways
+                  li: a href='#chat_content' data-toggle='tab' = t('.chat')
+                .tab-content
+                  #chat_content.tab-pane
+                    = render partial: 'chat'
+          /.col-md-12
+          /  .row#bid_panel
+          /    .col-md-18.col-md-offset-3
+          /      .row
+          /        .col-xs-12.col-md-24.col-lg-12
+          /          p.bid_title.ask = "SELL " + @market.ask['currency']
+          /        .col-xs-12.col-md-24.col-lg-12
+          /          p.bid_title.bid = "BUY " + @market.ask['currency']
+          /      = render partial: 'ticker'
+          /      .row
+          /        .col-xs-12.col-md-24.col-lg-12
+          /          = render partial: 'ask_entry', locals: {market: @market, order: @order_ask}
+          /        .col-xs-12.col-md-24.col-lg-12
+          /          = render partial: 'bid_entry', locals: {market: @market, order: @order_bid}
+          /      = render partial: 'my_orders'
+          /      /.row
+          /      /  .col-md-24
+          /      /    #bitcoin_price_index.panel.panel-default
+          /      /      a href="bitcoinaverage.com" target="_blank" BitcoinAverage Price Index
+
+          .col-md-7
+            = render partial: 'order_book'
+            = render partial: 'depths'
+            = render partial: 'ticker'
+            .row
+              .col-xs-12.col-md-24.col-lg-12
+                = render partial: 'ask_entry', locals: {market: @market, order: @order_ask}
+              .col-xs-12.col-md-24.col-lg-12
+                = render partial: 'bid_entry', locals: {market: @market, order: @order_bid}
+            = render partial: 'my_orders'
+
+    / Google Analytices
+    | <!-- Google Tag Manager -->
+    | <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M6RXMX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    | <script>
+    | (function (w, d, s, l, i) {
+    |   w[l] = w[l] || [];
+    |   w[l].push({
+    |     'gtm.start': new Date().getTime(), event: 'gtm.js'
+    |   });
+    |   var f = d.getElementsByTagName(s)[0],
+    |     j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+    |   j.async = true;
+    |   j.src ='//www.googletagmanager.com/gtm.js?id=' + i + dl;
+    |   f.parentNode.insertBefore(j, f);
+    | })(window, document, 'script', 'dataLayer', 'GTM-M6RXMX');
+    | </script>
+    | <!-- End Google Tag Manager -->

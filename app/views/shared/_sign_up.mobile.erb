@@ -1,0 +1,14 @@
+<%= simple_form_for identity, :url => '/auth/identity/register', html: { class: '' } do |f| %>
+    <%= f.input :email, :input_html => {:name => 'email'}, label: false %>
+    <%= f.input :password, :input_html => {:name => 'password'}, hint: false, label: false %>
+    <%= f.input :password_confirmation, :input_html => {:name => 'password_confirmation'}, label: false %>
+    <div class="form-group">
+      <%= f.button :submit, t('header.signup'), class: 'btn btn-primary btn-block' %>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-12 text-center">
+        <label>Already have an account?<a href="javascript:openSigninBox()"> SIGN IN</a></label>
+      </div>
+    </div>
+
+<% end %>

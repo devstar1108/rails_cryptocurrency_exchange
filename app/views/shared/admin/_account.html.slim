@@ -1,0 +1,20 @@
+- if !account.currency_obj.nil?
+  .panel.panel-info
+    .panel-heading
+      span = t('.account_info')
+      span = " : "
+      span = account.currency_text
+    .panel-body
+      dl.dl-horizontal
+        = item_for account, :amount
+        = item_for account, :locked
+        = item_for account, :balance
+        = item_for t('.total_withdraws') do
+          = account.withdraws.done_total_amount
+        = item_for t('.total_deposits') do
+          = account.deposits.done_total_amount
+        = item_for t('.total_fee') do
+          = account.deposits.done_total_fee + account.withdraws.done_total_fee
+        - if !account.currency_obj.nil? && account.currency_obj.coin?
+          = item_for t('.payment_address') do
+            = account.payment_address.address

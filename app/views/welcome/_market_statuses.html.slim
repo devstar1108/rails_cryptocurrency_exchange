@@ -1,0 +1,39 @@
+#market-statuses.light-wrapper.inner
+  .container.inner
+    .section-title.text-center
+      h3 Market Status
+    .panel.panel-default
+      .panel-body.panel-body-head
+        table.table
+          thead: tr
+            th.col-xs-6
+              span.name = t('.market')
+            th.col-xs-2.text-right.vol = t('.vol')
+            th.col-xs-2.text-right.high = t('.high')
+            th.col-xs-2.text-right.low = t('.low')
+            th.col-xs-3.text-right.buy = t('.buy')
+            th.col-xs-3.text-right.sell = t('.sell')
+            th.col-xs-3.text-right.price = t('.price')
+            th.col-xs-3.text-right.change = t('.change')
+      strong.help-block Click on Coin below you wish to buy or sell
+      .panel-body.panel-body-content
+        table.table.table-hover.markets.all
+          tbody
+            - for market in @markets
+              tr.market id="market-list-#{market.id}" class="quote-#{market.quote_unit}" data-market=market.id
+                td.col-xs-6.name
+                  = link_to market.name, market_path(market)
+                td.col-xs-2.text-right.vol
+                  = Global[market.id].ticker[:volume]
+                td.col-xs-2.text-right.high
+                  = Global[market.id].ticker[:high]
+                td.col-xs-2.text-right.low
+                  = Global[market.id].ticker[:low]
+                td.col-xs-3.text-right.buy
+                  = Global[market.id].ticker[:buy]
+                td.col-xs-3.text-right.sell
+                  = Global[market.id].ticker[:sell]
+                td.col-xs-3.text-right.price
+                  = Global[market.id].ticker[:last]
+                td.col-xs-3.text-right.change
+                  | +0.00%

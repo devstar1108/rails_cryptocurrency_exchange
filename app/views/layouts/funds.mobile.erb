@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="funds">
+<head>
+  <title>Crycen Exchange</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= include_gon %>
+  <% stylesheet = content_for?(:stylesheet) ? yield(:stylesheet) : "application" %>
+  <%= stylesheet_link_tag    '/font/css/font-awesome.min' %>
+  <%= stylesheet_link_tag    'mobile/common/common' %>
+  <%= stylesheet_link_tag    'mobile/common/footer' %>
+  <%= stylesheet_link_tag    'mobile/common/menu' %>
+  <%= stylesheet_link_tag    'mobile/common/modal' %>
+  <%= stylesheet_link_tag    'mobile/pages/funds-page' %>
+
+  <%= javascript_include_tag "locales/#{I18n.locale}" %>
+  <%= javascript_include_tag "funds_mobile" %>
+  <%= csrf_meta_tags %>
+</head>
+<body data-lang="<%= locale_name %>" id="<%= body_id %>">
+
+<%= render 'shared/header' %>
+<%= yield %>
+<%= render 'shared/footer' %>
+
+<%= javascript_include_tag 'mobile/common/common-functions' %>
+<%= javascript_include_tag 'mobile/common/menu' %>
+<%= javascript_include_tag 'mobile/common/funds' %>
+</body>
+</html>

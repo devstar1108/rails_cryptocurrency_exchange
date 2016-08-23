@@ -1,0 +1,11 @@
+- trade.trend == 1 ? reason = 110 : reason = 120
+- account_version = AccountVersion.where("reason=? AND modifiable_type=? AND modifiable_id=?", reason, 'Trade', trade.id).first
+tr
+  td = t(".#{trade_side trade}")
+  td = trade.created_at
+  td = trade.market.base_unit.upcase
+  td = trade.volume
+  td = trade.market.quote_unit.upcase
+  td = trade.volume*trade.price
+  td = trade.price
+  td = account_version.fee

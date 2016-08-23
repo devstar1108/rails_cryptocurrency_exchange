@@ -1,0 +1,132 @@
+
+<!-- BEGIN HEADER -->
+<div class="header">
+  <!-- BEGIN NAVIGATION -->
+  <div id="custom-nav-2" class="navbar navbar-fixed-top hide-class">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="custom-nav-closed" id="menu-close-but">
+          <i class="fa fa-close"></i>
+        </a>
+        <a href="<%= root_path%>" class="navbar-brand logo">
+          <%= image_tag('mobile/logo-black.png') %>
+        </a>
+
+          <div class="help-type-2 float-left-class"><a href="#" id="english-btn"><%= image_tag('mobile/usa.png') %></a></div>
+          <div class="help-type-2 float-left-class margin-left-30"><a href="#" id="chinese-btn"><%= image_tag('mobile/china.png') %><a></div>
+
+      </div>
+    </div>
+  </div>
+  <!-- END NAVIGATION -->
+</div>
+
+<div class="header">
+  <!-- BEGIN NAVIGATION -->
+  <div id="custom-nav-3" class="navbar navbar-fixed-top hide-class">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="custom-nav-closed" id="menu-2-close-but" style="float: right; padding-right: 10px;">
+          <i class="fa fa-close"></i>
+        </a>
+        <a href="<%= root_path%>" class="navbar-brand logo">
+          <%= image_tag('mobile/logo-black.png') %>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- END NAVIGATION -->
+</div>
+
+<div class="header">
+  <!-- BEGIN NAVIGATION -->
+  <div id="custom-nav" class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed navbar-toggle-type-2" id="menu-but">
+          <i class="fa fa-align-justify"></i>
+          MENU
+        </button>
+        <a href="<%= root_path%>" class="navbar-brand logo">
+          <%= image_tag('mobile/logo-black.png', :class => 'black-logo') %>
+          <%= image_tag('mobile/logo-white.png', :class => 'white-logo') %>
+        </a>
+        <a class="help-type-2" id="help-btn">
+          <i class="fa fa-question-circle"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- END NAVIGATION -->
+</div>
+
+<!-- Header END -->
+
+<div class="hide-class" id="menu-board-2">
+  <div class="full-width-class label-types">
+    <div class="float-left-class">HOW TO BUY?</div>
+    <div class="float-right-class"><i class="fa fa-angle-right"></i></div>
+  </div>
+  <div class="full-width-class label-types menu-board-2-item">
+    <div class="float-left-class">HOW TO WITHDRAW?</div>
+    <div class="float-right-class"><i class="fa fa-angle-right"></i></div>
+  </div>
+  <a href="<%= tickets_path%>">
+    <div class="full-width-class label-types menu-board-2-item">
+      <div class="float-left-class"><i class="fa fa-comments"></i> MY TICKETS(3)</div>
+      <div class="float-right-class"><i class="fa fa-angle-right"></i></div>
+    </div>
+  </a>
+  <a href="<%= new_ticket_path%>">
+    <div class="full-width-class label-types menu-board-2-item">
+      <div class="float-left-class"><i class="fa fa-paper-plane"></i> NEW TICKET</div>
+      <div class="float-right-class"><i class="fa fa-angle-right"></i></div>
+    </div>
+  </a>
+</div>
+
+<div class="row">
+  <div class="menu-board hide-class" id="menu-board">
+    <div class="each-item-div">
+      <a href="<%= market_path('ltcbtc') %>">
+        <div class="each-circle-item">
+          <i class="fa fa-refresh fa-2x"></i>
+        </div>
+        <div class="each-item-explain">
+          TRADE COINS
+        </div>
+      </a>
+    </div>
+    <div class="each-item-div">
+      <a href="<%= funds_path %>">
+        <div class="each-circle-item">
+          <i class="fa fa-money fa-2x"></i>
+        </div>
+        <div class="each-item-explain">
+          FUNDS
+        </div>
+      </a>
+    </div>
+    <div class="each-item-div">
+      <a href="<%= tickets_path %>">
+        <div class="each-circle-item">
+          <i class="fa fa-question-circle fa-2x"></i>
+        </div>
+        <div class="each-item-explain">
+          HELP
+        </div>
+      </a>
+    </div>
+    <div class="each-item-div">
+      <a href="<%= settings_path %>">
+        <div class="each-circle-item">
+          <i class="fa fa-user fa-2x"></i>
+        </div>
+        <div class="each-item-explain">
+          MY PROFILE
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="mask-div hide-class" id="mask-div"></div>

@@ -1,0 +1,28 @@
+doctype html
+html lang="en"
+  head
+    link rel="shortcut icon" href="/favicon.ico"
+    = stylesheet_link_tag "application", :media => "all"
+    = javascript_include_tag "application"
+    = javascript_include_tag "locales/#{I18n.locale}"
+    = render 'shared/html5'
+    = render 'shared/meta'
+    = csrf_meta_tags
+  body id='#{body_id}' data-lang="#{locale_name}"
+    #preloader
+      #status
+        .spinner
+    .body-wrapper
+      - if content_for?(:header)
+        = yield(:header)
+      - else
+        = render 'shared/header', menu_styles: 'solid fixed'
+      .offset
+      .light-wrapper
+        .container.inner.tp40
+          = yield
+      #push
+      - if content_for?(:footer)
+        = yield(:footer)
+      - else
+        = render 'shared/footer'

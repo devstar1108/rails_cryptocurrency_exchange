@@ -1,0 +1,59 @@
+<h1 class="page-title"><%= "Fee's Schedule" %></h1>
+
+<div class="panel panel-default">
+  <div class="panel-body panel-fees">
+
+    <div class='row'>
+      <div class="col-xs-24">
+        <h3>Trading Fee's</h3>
+        <table class="table table-condensed table-hover table-responsive">
+          <thead>
+              <tr>
+                <th>Market</th>
+                <th>Ask</th>
+                <th>Bid</th>
+              </tr>
+
+          </thead>
+          <tbody>
+            <% @markets.each do |market| %>
+              <tr>
+                <td class="col-xs-12"><%= market.name %></td>
+                <td class="col-xs-6"><%= market.ask["fee"] * 100 || "0.0" %>&nbsp;%</td>
+                <td class="col-xs-6"><%= market.bid["fee"] * 100 || "0.0" %>&nbsp;%</td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div><!-- .row -->
+
+    <div class='row'>
+      <div class="col-xs-24">
+        <h3>Deposit and Withdraw Fee's</h3>
+        <table class="table table-condensed table-hover table-responsive">
+          <thead>
+              <tr>
+                <th>Currency</th>
+                <th>Deposit</th>
+                <th>Withdraw</th>
+              </tr>
+
+          </thead>
+          <tbody>
+            <% @currencies.each_with_index do |currency, index| %>
+              <tr>
+                <td class="col-xs-10"><%= currency[:code].upcase %></td>
+                <td class="col-xs-6"><%= @deposit_channels[index][:fee] || "0.0" %></td>
+                <td class="col-xs-6"><%= @withdraw_channels[index][:fee] || "0.0" %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div><!-- .row -->
+
+
+  </div>
+</div>
+

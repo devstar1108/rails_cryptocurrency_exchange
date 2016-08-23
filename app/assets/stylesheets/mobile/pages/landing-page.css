@@ -1,0 +1,241 @@
+.banner-section {
+    width: 100%;
+    height: 200px;
+    background: darkgoldenrod url(/land_img.jpg) 0 0 no-repeat;
+    background-size: 100% 200px;
+    text-align: center;
+    color: #ebebeb;
+    padding: 20px 50px;
+}
+
+.banner-section .main-title {
+    padding-top: 40px;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.banner-section .sub-title {
+    font-size: 14px;
+}
+
+.login-section h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+
+}
+
+.login-section span {
+    font-size: 10px;
+    color: #5b5b5b;
+    text-transform: uppercase;
+    padding: 0 8px;
+}
+
+.btn-signin {
+    color: #262626;
+    background-color: #fff;
+    border-color: #e3e3e3;
+    width: 150px;
+    height: 44px;
+    line-height: 30px;
+}
+
+.btn-signin:hover, .btn-signin:focus, .btn-signin:active, .btn-signin.active, .open > .dropdown-toggle.btn-signin {
+    color: #262626;
+    background-color: #e6e6e6;
+    border-color: #adadad
+}
+
+.btn-signin:active, .btn-signin.active, .open > .dropdown-toggle.btn-signin {
+    background-image: none
+}
+
+.btn-signin.disabled, .btn-signin[disabled], fieldset[disabled] .btn-signin, .btn-signin.disabled:hover, .btn-signin[disabled]:hover, fieldset[disabled] .btn-signin:hover, .btn-signin.disabled:focus, .btn-signin[disabled]:focus, fieldset[disabled] .btn-signin:focus, .btn-signin.disabled:active, .btn-signin[disabled]:active, fieldset[disabled] .btn-signin:active, .btn-signin.disabled.active, .btn-signin[disabled].active, fieldset[disabled] .btn-signin.active {
+    background-color: #fff;
+    border-color: #ccc
+}
+
+.btn-signup {
+    color: #262626;
+    background-color: #fff;
+    border-color: #e3e3e3;
+    width: 150px;
+    height: 44px;
+    line-height: 30px;
+}
+
+.btn-signup:hover, .btn-signup:focus, .btn-signup:active, .btn-signup.active, .open > .dropdown-toggle.btn-signup {
+    color: #262626;
+    background-color: #e6e6e6;
+    border-color: #adadad
+}
+
+.btn-signup:active, .btn-signup.active, .open > .dropdown-toggle.btn-signup {
+    background-image: none
+}
+
+.btn-signup.disabled, .btn-signup[disabled], fieldset[disabled] .btn-signup, .btn-signup.disabled:hover, .btn-signup[disabled]:hover, fieldset[disabled] .btn-signup:hover, .btn-signup.disabled:focus, .btn-signup[disabled]:focus, fieldset[disabled] .btn-signup:focus, .btn-signup.disabled:active, .btn-signup[disabled]:active, fieldset[disabled] .btn-signup:active, .btn-signup.disabled.active, .btn-signup[disabled].active, fieldset[disabled] .btn-signup.active {
+    background-color: #fff;
+    border-color: #ccc
+}
+
+.market-status-table {
+    margin-bottom: 0px;
+    margin-top: 2px;
+    border: none;
+}
+
+.market-status-table .panel-heading {
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #212C3D;
+    color: #ffffff;
+}
+
+.market-status-table .panel-heading i {
+    padding-right: 4px;
+}
+
+.market-status-table .panel-body {
+    padding: 0px;
+}
+
+.market-status-table .panel-body table {
+    font-size: 12px;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 8px 15px;
+    border: none;
+}
+
+/*==============Tablet Part===========*/
+@media (min-width: 768px) {
+    .banner-section {
+        width: 100%;
+        height: 300px;
+        background: darkgoldenrod url(/land_img.jpg) 0 0 no-repeat;
+        background-size: 100% 300px;
+        text-align: center;
+        color: #ebebeb;
+        padding: 20px 50px;
+    }
+
+    .banner-section .main-title {
+        padding-top: 70px;
+        font-size: 33px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .banner-section .sub-title {
+        font-size: 17px;
+    }
+
+    .login-section h4 {
+        font-size: 19px;
+        text-transform: uppercase;
+        margin-bottom: 0px;
+
+    }
+
+    .login-section span {
+        font-size: 15px;
+        color: #5b5b5b;
+        text-transform: uppercase;
+        padding: 0 40px;
+    }
+
+    .btn-signin {
+        color: #262626;
+        background-color: #fff;
+        border-color: #e3e3e3;
+        width: 300px;
+        height: 80px;
+        line-height: 66px;
+        font-size: 19px;
+    }
+
+    .btn-signin:hover, .btn-signin:focus, .btn-signin:active, .btn-signin.active, .open > .dropdown-toggle.btn-signin {
+        color: #262626;
+        background-color: #e6e6e6;
+        border-color: #adadad
+    }
+
+    .btn-signin:active, .btn-signin.active, .open > .dropdown-toggle.btn-signin {
+        background-image: none
+    }
+
+    .btn-signin.disabled, .btn-signin[disabled], fieldset[disabled] .btn-signin, .btn-signin.disabled:hover, .btn-signin[disabled]:hover, fieldset[disabled] .btn-signin:hover, .btn-signin.disabled:focus, .btn-signin[disabled]:focus, fieldset[disabled] .btn-signin:focus, .btn-signin.disabled:active, .btn-signin[disabled]:active, fieldset[disabled] .btn-signin:active, .btn-signin.disabled.active, .btn-signin[disabled].active, fieldset[disabled] .btn-signin.active {
+        background-color: #fff;
+        border-color: #ccc
+    }
+
+    .btn-signup {
+        color: #262626;
+        background-color: #fff;
+        border-color: #e3e3e3;
+        width: 300px;
+        height: 80px;
+        line-height: 66px;
+        font-size: 19px;
+    }
+
+    .btn-signup:hover, .btn-signup:focus, .btn-signup:active, .btn-signup.active, .open > .dropdown-toggle.btn-signup {
+        color: #262626;
+        background-color: #e6e6e6;
+        border-color: #adadad
+    }
+
+    .btn-signup:active, .btn-signup.active, .open > .dropdown-toggle.btn-signup {
+        background-image: none
+    }
+
+    .btn-signup.disabled, .btn-signup[disabled], fieldset[disabled] .btn-signup, .btn-signup.disabled:hover, .btn-signup[disabled]:hover, fieldset[disabled] .btn-signup:hover, .btn-signup.disabled:focus, .btn-signup[disabled]:focus, fieldset[disabled] .btn-signup:focus, .btn-signup.disabled:active, .btn-signup[disabled]:active, fieldset[disabled] .btn-signup:active, .btn-signup.disabled.active, .btn-signup[disabled].active, fieldset[disabled] .btn-signup.active {
+        background-color: #fff;
+        border-color: #ccc
+    }
+
+    .market-status-table {
+        margin-bottom: 0px;
+        margin-top: 2px;
+        border: none;
+    }
+
+    .market-status-table .panel-heading {
+        font-size: 19px;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: #212C3D;
+        color: #ffffff;
+        padding: 17px 15px;
+    }
+
+    .market-status-table .panel-heading i {
+        padding-right: 4px;
+    }
+
+    .market-status-table .panel-body {
+        padding: 0px;
+    }
+
+    .market-status-table .panel-body table {
+        font-size: 17px;
+    }
+
+    .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+        padding: 10px 40px 15px 40px;
+        border: none;
+    }
+    .modal-dialog {
+        width: 500px !important;
+    }
+
+    .modal-body {
+        padding-bottom: 100px !important;
+    }
+
+}

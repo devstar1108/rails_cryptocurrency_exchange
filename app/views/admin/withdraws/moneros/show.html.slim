@@ -1,0 +1,30 @@
+.row
+  .col-xs-12
+    .panel.panel-primary
+      .panel-heading
+        span = t('.withdraw', sn: @monero.id)
+      .panel-body
+        = description_for :withdraw do
+          = item_for @monero, :id
+          = item_for @monero, :created_at
+          = item_for @monero, :aasm_state_text
+          hr.split
+          = item_for @monero.member, :name
+          = item_for @monero, :fund_extra
+          = item_for @monero, :fund_uid do
+            span = @monero.fund_uid.truncate(22)
+          = item_for @monero, :amount
+          hr.split
+          = item_for @monero, :remark
+          hr.split
+          ul.list-inline.pull-right
+            - if @monero.may_reject?
+              li
+                = link_to t('.reject'), url_for([:admin, @monero]), class: 'btn btn-danger', method: 'DELETE', confirm: t('.reject_confirm')
+            - if @monero.may_process?
+              li
+                = link_to t('.process'), url_for([:admin, @monero]), class: 'btn btn-primary', method: 'PATCH'
+
+  .col-xs-12
+    = render partial: 'shared/admin/member', locals: {member: @monero.member}
+    = render partial: 'shared/admin/account', locals: {account: @monero.account}

@@ -1,0 +1,13 @@
+= simple_vertical_form_for [:admin, :settings, notification] do |f|
+  = f.input :notification_text, required: true
+  = f.input :notification_color, as: :select, :collection => [['Red', 'red'], ['Yellow', 'yellow'], ['Green', 'green']], required: true, :include_blank => false
+  = f.input :link_text
+  = f.input :link
+  label class="string optional control-label" for="notification_notification_text" Activated?
+  |&nbsp;&nbsp;
+  = f.check_box :active, {}, "true", "false"
+  hr.split
+  = f.button :wrapped, cancel: admin_settings_notifications_path
+
+
+

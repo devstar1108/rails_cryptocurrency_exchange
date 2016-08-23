@@ -1,0 +1,262 @@
+#offset {
+    margin-top: 54px;
+}
+
+.aboutus-panel {
+    padding-bottom: 45px;
+}
+
+.aboutus-panel .panel-heading {
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #212C3D;
+    color: #ffffff;
+}
+
+.aboutus-panel .panel-heading i {
+    padding-right: 4px;
+}
+
+.aboutus-panel .panel-body {
+    padding: 0px;
+}
+
+.mission-section {
+    text-align: center;
+
+}
+
+.mission-section .mission-title, .profile-section .mission-title {
+    padding: 35px 12px 15px 12px;
+    margin-bottom: 28px;
+    border-bottom: solid 1px #efefef;
+    color: #333333;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.mission-section .mission-body {
+    font-size: 13px;
+    text-align: justify;
+}
+
+.profile-section {
+    text-align: center;
+}
+
+.profile-section img {
+    width: 100%;
+    max-width: 300px;
+    border: solid 6px #efefef;
+}
+
+.profile-name {
+    font-weight: 700;
+    text-transform: uppercase !important;
+    color: #333333;
+    font-size: 14px;
+    margin-top: 7px;
+    margin-bottom: 0px;
+}
+
+.profile-role {
+    font-weight: 300;
+    text-transform: uppercase !important;
+    color: #979797;
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+.profile-description {
+    font-size: 13px;
+    color: #626262;
+    margin-bottom: 33px;
+    text-align: justify;
+}
+.modal-backdrop.in {
+    opacity: 0.8;
+}
+
+.modal .close {
+    position: absolute;
+    left: 23px;
+    top: 20px;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.modal .close:hover, .modal .close:focus {
+    color: #000000;
+}
+.modal .modal-dialog {
+    margin-top: 100px;
+    max-width: 440px;
+    min-width: 300px;
+}
+.modal .modal-dialog .modal-body {
+    padding: 0px;
+    text-align: center;
+}
+.modal .modal-dialog .modal-body img{
+    width: 100%;
+    height: 250px;
+}
+.modal .modal-dialog .modal-body > div
+{
+    padding: 0px 15px;
+}
+.modal .profile-role {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #efefef;
+
+}
+ .btn-contactme{
+     background-color: #179c17;
+     height: 44px;
+     width: 100%;
+     display: block;
+     text-transform: uppercase;
+     font-size: 12px;
+     color: #ffffff;
+     font-weight: inherit;
+ }
+.btn-contactme:hover, .btn-contactme:focus, .btn-contactme:active, .btn-contactme.active, .open > .dropdown-toggle.btn-contactme {
+    color: #ffffff;
+    background-color: #34c500;
+    border-color: transparent;
+}
+
+/*==============Tablet Part===========*/
+@media (min-width: 768px) {
+
+    .aboutus-panel {
+        padding-bottom: 90px;
+    }
+
+    .aboutus-panel .panel-heading {
+        font-size: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: #212C3D;
+        color: #ffffff;
+    }
+
+    .aboutus-panel .panel-heading i {
+        padding-right: 4px;
+    }
+
+    .aboutus-panel .panel-body {
+        padding: 0px;
+    }
+
+    .mission-section {
+        text-align: center;
+        padding: 0px 9px;
+    }
+
+    .mission-section .mission-title, .profile-section .mission-title {
+        padding: 35px 12px 15px 12px;
+        margin-bottom: 28px;
+        border-bottom: solid 1px #efefef;
+        color: #333333;
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .mission-section .mission-body {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .profile-section {
+        text-align: center;
+    }
+
+    .profile-section img {
+        width: 100%;
+        max-width: 330px;
+        border: solid 12px #efefef;
+    }
+
+    .profile-name {
+        font-weight: 700;
+        text-transform: uppercase !important;
+        color: #333333;
+        font-size: 22px;
+        margin-top: 7px;
+        margin-bottom: 0px;
+    }
+
+    .profile-role {
+        font-weight: 300;
+        text-transform: uppercase !important;
+        color: #979797;
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    .profile-description {
+        font-size: 16px;
+        color: #626262;
+        margin-bottom: 60px;
+        text-align: justify;
+    }
+    .modal-backdrop.in {
+        opacity: 0.8;
+    }
+
+    .modal .close {
+        position: absolute;
+        left: 23px;
+        top: 20px;
+        color: #ffffff;
+        opacity: 1;
+        font-size: 30px;
+    }
+
+    .modal .close:hover, .modal .close:focus {
+        color: #000000;
+    }
+    .modal .modal-dialog {
+        max-width: 500px;
+        min-width: 500px;
+        margin: 200px auto 0 auto;
+    }
+    .modal .modal-dialog .modal-body {
+        padding: 0px;
+        text-align: center;
+    }
+    .modal .modal-dialog .modal-body img{
+        width: 100%;
+        height: 300px;
+    }
+    .modal .modal-dialog .modal-body > div
+    {
+        padding: 0px 15px;
+    }
+    .modal .profile-role {
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #efefef;
+
+    }
+    .btn-contactme{
+        background-color: #179c17;
+        height: 60px;
+        width: 100%;
+        display: block;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: inherit;
+    }
+    .btn-contactme:hover, .btn-contactme:focus, .btn-contactme:active, .btn-contactme.active, .open > .dropdown-toggle.btn-contactme {
+        color: #ffffff;
+        background-color: #34c500;
+        border-color: transparent;
+    }
+}

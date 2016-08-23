@@ -1,0 +1,128 @@
+
+<!-- Body BEGIN -->
+<div class="landing_page"><!-- add class page-header-fixed, if you want to fix header -->
+
+<!-- BEGIN BANNER -->
+<div class="banner-section">
+  <p class="main-title"> Crypto-Central </p>
+
+  <p class="sub-title"> A Most Simplistic Safe & Secure Shiny New Crypto Currency Exchange </p>
+</div>
+<!-- END BANNER -->
+
+<div class="main">
+  <div class="container">
+    <%  unless current_user %>
+    <!-- BEGIN LOGIN BOX -->
+    <div class="row login-section margin-bottom-30">
+      <div class="text-center padding-top-15">
+        <h4>Log in to use crycen services</h4>
+      </div>
+      <div class="padding-top-15 text-center">
+        <a href="#signin" class="btn btn-signin" id="login-btn">
+          <i class="fa fa-sign-in"></i> SIGN IN
+        </a>
+        <span>OR</span>
+        <a href="#signup" class="btn btn-signup" id="register-btn">
+          <i class="fa fa-sign-out"></i> SIGN UP
+        </a>
+      </div>
+    </div>
+    <!-- END LOGIN BOX -->
+    <% end %>
+    <!-- BEGIN MARKET STATUS TABLE-->
+    <div class="row panel market-status-table" id="market-statuses">
+      <div class="panel-heading">
+        <div>
+          <i class="fa fa-line-chart"></i>
+          Market Status
+        </div>
+      </div>
+      <div class="panel-body">
+        <table class="table table-striped table-hover outercenter">
+          <thead>
+          <tr>
+            <th>Market</th>
+            <th>Price</th>
+            <th>Change</th>
+          </tr>
+          </thead>
+          <tbody>
+              <% for market in @markets %>
+              <tr id="market-list-<%= market.id %>" class="quote-<%= market.quote_unit %>" data-market=<%= market.id %>>
+                <td class="name"><%= link_to market.name, market_path(market) %></td>
+                <td class="price"><% Global[market.id].ticker[:price] %></td>
+                <td class="change color-negative">+0.00%</td>
+              </tr>
+              <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- END MARKET STATUS TABLE-->
+  </div>
+</div>
+
+<div class="modal fade in hide" id="login_dialog" role="dialog" style="display: block;">
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i
+  class="fa fa-close"></i></span></button>
+
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal-mark">
+          <div class="modal-mark-outer-border">
+            <i class="fa fa-sign-in"></i>
+          </div>
+        </div>
+        <div>
+          <div>
+            <label class="main-title">SING IN</label>
+          </div>
+          <div>
+            <label class="sub-title">Sign in to use crycen system</label>
+          </div>
+          <div class="custom-form">
+            <%= render partial: 'shared/sign_in', locals: { identity: Identity.new, require_captcha: false } %>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade in hide" id="register_dialog" role="dialog" style="display: block;">
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i
+  class="fa fa-close"></i></span></button>
+
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal-mark">
+          <div class="modal-mark-outer-border">
+            <i class="fa fa-user"></i>
+          </div>
+        </div>
+        <div>
+          <div>
+            <label class="main-title">REGISTER</label>
+          </div>
+          <div>
+            <label class="sub-title">Register and use crycen system</label>
+          </div>
+          <div class="custom-form">
+            <%= render partial: 'shared/sign_up', locals: { identity: Identity.new } %>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop fade in hide" id="modal_backdrop"></div>
+</div>
+

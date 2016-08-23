@@ -1,0 +1,33 @@
+.row
+  .panel.panel-primary
+    .panel-body
+      = link_to 'Create New Notification', new_admin_settings_notification_path
+.row
+  .panel.panel-primary
+    .panel-heading
+      span = 'Notifications'
+    .panel-body
+      = table_for(@notifications, class: 'table table-condensed table-hover') do |t|
+        - t.column :id, 'ID', class: 'col-xs-2'
+        - t.column :notification_text, 'Notification', class: 'col-xs-14' do |x|
+          span = x.notification_text
+          - if !x.link.nil? && !x.link.blank?
+            |&nbsp;&nbsp;
+            a href="#{x.link}" target="_blank" = x.link_text
+        - t.column :notification_color, 'Color', class: 'col-xs-2' do |x|
+          span = x.notification_color.humanize
+        - t.column :active?, 'Activated?', class: 'col-xs-2' do |x|
+          = yesno x.active?
+        - t.column :actions, 'Actions', class: 'col-xs-4' do |x|
+          - if x.active?
+            = link_to 'Deactivate', active_admin_settings_notification_path(x)
+          - else
+            = link_to 'Activate', active_admin_settings_notification_path(x)
+          /|&nbsp;|&nbsp;
+          /= link_to t('actions.view'), url_for([:admin, :settings, x]), target: '_blank'
+          |&nbsp;|&nbsp;
+          = link_to t('actions.edit'), edit_admin_settings_notification_path(x)
+          |&nbsp;|&nbsp;
+          = link_to 'Delete', delete_admin_settings_notification_path(x), method: :delete
+
+

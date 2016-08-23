@@ -1,0 +1,38 @@
+header.navbar.navbar-default.navbar-static-top role = "navigation"
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle.collapsed aria-expanded="false" data-target="#market-navbar-collapse" data-toggle="collapse" type="button"
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand href=root_path
+        | CRYCEN
+        | &nbsp;
+        = @market.name
+    #market-navbar-collapse.collapse.navbar-collapse
+      ul#menu.nav.navbar-nav.navbar-left
+        p.navbar-text
+          span data-title="7d Volume"
+            span.vol
+          span data-title='#{t('.high')}'
+            span.high
+          span data-title='#{t('.low')}'
+            span.low
+          span data-title='#{t('.change')}'
+            span.change
+          span
+            input type="number" value="1" id="btc_amount" maxlength="6"
+            |&nbsp;BTC =&nbsp;
+            input type="number" step="any" id="usd_amount" value="#{@btc_price[:avg_24h]}" placeholder="#{@btc_price[:avg_24h]}" maxlength="6"
+            |&nbsp;USD &nbsp;
+            a href="http://bitcoinaverage.com" target="_blank" BitcoinAverage
+
+      ul.nav.navbar-nav.navbar-right
+        - if current_user
+          = render partial: 'account_summary'
+          = render partial: 'settings'
+        - else
+          p.navbar-text
+            == t('private.markets.mask.warning')
+        = render partial: 'language'

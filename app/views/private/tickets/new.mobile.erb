@@ -1,0 +1,41 @@
+<%= stylesheet_link_tag    'mobile/pages/ticket-page' %>
+
+<!-- Body BEGIN -->
+<div class="landing_page"><!-- add class page-header-fixed, if you want to fix header -->
+
+  <%= render 'shared/header' %>
+  <div id="offset"></div>
+
+  <div class="content">
+    <div class="container">
+      <!-- BEGIN SUBMIT TICKET -->
+      <div class="row submit-ticket-section" style="padding: 20px 20px;">
+        <label class="sub-title">SUBMIT NEW TICKET</label>
+        <a class="btn btn-back pull-right" href="<%= tickets_path %>">Back</a>
+        <p class="description" styl>
+          If you have any problems, start a new discussion so that our staff can help you out as soon as possible. All
+          discussions are private between you and the support staff.
+        </p>
+
+        <%= simple_form_for @ticket do |f| %>
+          <div class="form-group">
+            <%= f.input :title %>
+          </div>
+          <div class="form-group">
+            <%= f.input :content, input_html: {rows: 10} %>
+          </div>
+
+          <!--<button type="submit" class="btn btn-default btn-block">SUBMIT</button>-->
+          <%= f.button :wrapped, class: 'btn-block' %>
+        <% end %>
+      </div>
+      <!-- END SUBMIT TICKET -->
+    </div>
+  </div>
+
+  <%= render 'shared/footer' %>
+
+  <%= javascript_include_tag 'mobile/common/common-functions' %>
+  <%= javascript_include_tag 'mobile/common/menu' %>
+</div>
+<!-- END BODY -->

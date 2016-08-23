@@ -1,0 +1,267 @@
+.submit-ticket-section {
+    padding: 15px 0px;
+}
+.submit-ticket-section .sub-title {
+    font-size: 13px;
+    color: #404040;
+    margin-bottom: 12px;
+}
+.submit-ticket-section .description {
+    font-size: 13px;
+    color: #626262;
+    margin-bottom: 18px;
+}
+.submit-ticket-section .form-group {
+    margin-bottom: 19px;
+    color: red;
+    font-size: 13px;
+}
+.submit-ticket-section .form-group label {
+    font-size: 13px;
+    font-weight: normal;
+    color: #646464;
+}
+
+.submit-ticket-section .form-group input {
+    border-radius: 3px;
+    height: 37px;
+    font-size: 13px;
+    padding: 8px;
+}
+.submit-ticket-section .form-group textarea {
+    border-radius: 3px;
+    height: 105px;
+    font-size: 13px;
+    padding: 8px;
+}
+.submit-ticket-section .btn {
+    height: 37px;
+    background-color: #179c17;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+hr.border {
+    margin: 10px 0px 20px 0px;
+}
+.ticket-section .sub-title {
+    font-size: 13px;
+    color: #404040;
+    margin-bottom: 20px;
+}
+.ticket-section .custom-list-item {
+        padding: 10px 0px 13px 0px;
+}
+.ticket-section div {
+    clear: both;
+}
+.ticket-section .custom-list-item .ticket-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #286aa6;
+    float: left;
+}
+.ticket-section .custom-list-item .comment-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #179c17;
+    float: left;
+}
+.ticket-section .custom-list-item .ticket-time {
+    float: right;
+}
+.ticket-section .custom-list-item .ticket-time i {
+    font-size: 14px;
+    color: #286aa6;
+    padding-right: 2px;
+}
+.ticket-section .custom-list-item .ticket-time span {
+    font-size: 13px;
+    color: #179c17;
+}
+.ticket-section .custom-list-item .ticket-time1 {
+    float: right;
+}
+.ticket-section .custom-list-item .ticket-time1 i {
+    font-size: 14px;
+    color: #286aa6;
+    padding-right: 2px;
+}
+.ticket-section .custom-list-item .ticket-time1 span{
+    font-size: 13px;
+    color: #626262;
+}
+
+.ticket-section .custom-list-item .ticket-content{
+ font-size: 13px;
+    color: #272727;
+}
+.ticket-section .btn-closeticket {
+    border-radius: 3px;
+    border: 1px solid #efefef;
+    height: 25px;
+    line-height: 11px;
+    padding: 6px 15px;
+    color: #343434;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: #ffffff;
+    margin-right: 8px;
+}
+.btn-back {
+    border-radius: 3px;
+    border: 1px solid #286aa6 !important;
+    height: 25px !important;
+    line-height: 11px;
+    padding: 6px 15px;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: #286aa6 !important;
+
+}
+
+/*==============Tablet Part===========*/
+@media (min-width: 768px) {
+    .submit-ticket-section {
+        padding: 20px 0px;
+    }
+    .submit-ticket-section .sub-title {
+        font-size: 22px;
+        color: #404040;
+        margin-bottom: 12px;
+        font-weight: normal;;
+    }
+    .submit-ticket-section .description {
+        clear: both;
+        font-size: 15px;
+        color: #626262;
+        margin-bottom: 18px;
+    }
+    .submit-ticket-section .form-group {
+        margin-bottom: 35px;
+        color: red;
+        font-size: 22px;
+    }
+    .submit-ticket-section .form-group label {
+        font-size: 22px;
+        font-weight: normal;
+        color: #646464;
+    }
+
+    .submit-ticket-section .form-group input {
+        border-radius: 3px;
+        height: 50px;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .submit-ticket-section .form-group textarea {
+        border-radius: 3px;
+        height: 220px;
+        font-size: 22px;
+        padding: 14px;
+    }
+    .submit-ticket-section .btn {
+        height: 70px;
+        background-color: #179c17;
+        font-size: 22px;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    .submit-ticket-section .btn-back {
+        border-radius: 3px;
+        border: 1px solid #286aa6 !important;
+        height: 30px !important;
+        line-height: 28px;
+        padding: 0px 25px;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #286aa6 !important;
+
+    }
+
+    hr.border {
+        margin: 10px 0px 20px 0px;
+    }
+    .ticket-section .sub-title {
+        font-size: 22px;
+        color: #404040;
+        margin-bottom: 20px;
+    }
+    .ticket-section .custom-list-item {
+        padding: 26px 0px 30px 0px;
+    }
+    .ticket-section div {
+        clear: both;
+    }
+    .ticket-section .custom-list-item .ticket-title {
+        font-size: 22px;
+        font-weight: bold;
+        color: #286aa6;
+        float: left;
+    }
+    .ticket-section .custom-list-item .comment-title {
+        font-size: 22px;
+        font-weight: bold;
+        color: #179c17;
+        float: left;
+    }
+    .ticket-section .custom-list-item .ticket-time {
+        float: right;
+    }
+    .ticket-section .custom-list-item .ticket-time i {
+        font-size: 22px;
+        color: #286aa6;
+        padding-right: 2px;
+    }
+    .ticket-section .custom-list-item .ticket-time span {
+        font-size: 22px;
+        color: #179c17;
+    }
+    .ticket-section .custom-list-item .ticket-time1 {
+        float: right;
+    }
+    .ticket-section .custom-list-item .ticket-time1 i {
+        font-size: 22px;
+        color: #286aa6;
+        padding-right: 12px;
+    }
+    .ticket-section .custom-list-item .ticket-time1 span{
+        font-size: 22px;
+        color: #626262;
+        font-weight: normal;
+    }
+
+    .ticket-section .custom-list-item .ticket-content{
+        font-size: 22px;
+        color: #272727;
+    }
+    .ticket-section .btn-closeticket {
+        border-radius: 3px;
+        border: 1px solid #efefef;
+        height: 50px;
+        line-height: 48px;
+        padding: 0px 40px;
+        color: #343434;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #ffffff;
+        margin-right: 16px;
+    }
+    .ticket-section .btn-back {
+        border-radius: 3px;
+        border: 1px solid #286aa6 !important;
+        height: 50px !important;
+        line-height: 48px;
+        padding: 0px 40px;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #286aa6 !important;
+
+    }
+}

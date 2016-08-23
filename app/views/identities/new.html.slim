@@ -1,0 +1,9 @@
+= content_for :header, 'none'
+= content_for :frame, 'none'
+
+.row
+  .col-sm-8.col-sm-offset-8
+    #sign-up-form
+      h1.text-center Sign Up
+
+      = render partial: 'shared/sign_up', locals: { identity: @identity }

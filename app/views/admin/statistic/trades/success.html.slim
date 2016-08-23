@@ -1,0 +1,32 @@
+.row
+  .col-xs-24
+    .panel.panel-primary
+      .panel-heading Successful Trades List
+      .panel-body
+        table.table.table-condensed
+          thead: tr
+            th.text-right Price
+            th.text-right Volume
+            th.text-right Ask Id
+            th.text-right Bid Id
+            th.text-center Trend
+            th Market
+            th Created At
+            th.text-right Ask Member Id
+            th.text-right Bid Member Id
+
+          tbody
+            - @trades.each do |t|
+              - if !t.market.nil?
+                tr
+                  td.text-right = t[:price]
+                  td.text-right = t[:volume]
+                  td.text-right = t[:ask_id]
+                  td.text-right = t[:bid_id]
+                  td.text-center
+                    = t[:trend] == 1 ? 'Up(1)' : 'Down(0)'
+                  td = t.market[:id].upcase
+                  td = t[:created_at]
+                  td.text-right = t[:ask_member_id]
+                  td.text-right = t[:bid_member_id]
+

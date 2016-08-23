@@ -1,0 +1,12 @@
+tr
+  td = order.id
+  td = t ".#{order.kind}"
+  td = t ".#{order.state}"
+  td
+    - if not order.currency.nil?
+      = order.currency.upcase
+  td = order.price
+  td = order.origin_volume
+  td = order.avg_price
+  td = order.origin_volume - order.volume
+  td = order.created_at

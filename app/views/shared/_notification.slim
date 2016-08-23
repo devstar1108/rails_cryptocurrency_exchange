@@ -1,0 +1,31 @@
+- if not @notification.nil?
+  .flash-message
+    -if @notification[:notification_color] == 'green'
+      .alert.alert-dismissable.alert-success
+        button.close type="button" data-dismiss="alert" aria-hidden="true" &times;
+        p
+          i.fa.fa-bullhorn
+          span = @notification[:notification_text]
+          - if !@notification[:link].nil? && !@notification[:link].blank?
+            |&nbsp;&nbsp;
+            a href="#{@notification[:link]}" target="_blank" = @notification[:link_text]
+
+    -if @notification[:notification_color] == 'red'
+      .alert.alert-dismissable.alert-danger
+        button.close type="button" data-dismiss="alert" aria-hidden="true" &times;
+        p
+          i.fa.fa-info-circle
+          span = @notification[:notification_text]
+          - if !@notification[:link].nil? && !@notification[:link].blank?
+            |&nbsp;&nbsp;
+            a href="#{@notification[:link]}" target="_blank" = @notification[:link_text]
+
+    -if @notification[:notification_color] == 'yellow'
+      .alert.alert-dismissable.alert-warning
+        button.close type="button" data-dismiss="alert" aria-hidden="true" &times;
+        p
+          i.fa.fa-info-circle
+          span = @notification[:notification_text]
+          - if !@notification[:link].nil? && !@notification[:link].blank?
+            |&nbsp;&nbsp;
+            a href="#{@notification[:link]}" target="_blank" = @notification[:link_text]

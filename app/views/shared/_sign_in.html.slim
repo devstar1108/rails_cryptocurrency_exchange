@@ -1,0 +1,18 @@
+= simple_form_for identity, :url => '/auth/identity/callback', :method => :post, html: { class: '' } do |f|
+  = f.input :email, :input_html => {:name => 'auth_key'}, label: t('simple_form.labels.session.email'), placeholder: t('simple_form.placeholders.session.email'), label: false
+  = f.input :password, :as => 'password', :input_html => {:name => 'password'}, label: t('simple_form.labels.session.password'), placeholder: t('simple_form.placeholders.session.password'), hint: false, label: false
+  - if require_captcha
+    = f.input :captcha, required: true, label: t('simple_form.labels.session.captcha') do
+      = show_simple_captcha
+
+  = f.button :submit, t('header.signin'), class: 'btn btn-primary btn-block'
+
+  .row style="margin-top: 20px;margin-bottom: 20px;"
+    .col-xs-12.text-left
+      = link_to t('actions.cancel'), root_path
+    .col-xs-12.text-right
+      = link_to t('.reset_password'), new_reset_password_path
+
+  p.text-center
+    | Don't have an account?
+    =< link_to t('header.signup'), signup_path

@@ -1,0 +1,118 @@
+<%= stylesheet_link_tag    'mobile/pages/setting-page' %>
+
+<!-- Body BEGIN -->
+<div class="landing_page"><!-- add class page-header-fixed, if you want to fix header -->
+
+<%= render 'shared/header' %>
+<div id="offset"></div>
+
+<div class="content">
+  <div class="container">
+    <!-- BEGIN SETTING PANEL -->
+    <div class="row custom-list">
+      <div class="custom-list-item">
+        <div class="first-line">
+          <i class="fa fa-envelope-square"></i>
+        </div>
+        <div class="second-line">
+          <label class="first">E- MAIL VERIFICATION</label>
+          <label class="second"><%= current_user.email %></label>
+        </div>
+        <div class="third-line">
+          <% if current_user.activated? %>
+            <i class="fa fa-check"></i>
+          <% else %>
+              <a href="<%= new_activation_path%>">
+                Resend
+                <i class="fa fa-angle-right"></i>
+              </a>
+          <% end %>
+        </div>
+      </div>
+      <div class="custom-list-item">
+        <div class="first-line">
+          <i class="fa fa-phone-square"></i>
+        </div>
+        <div class="second-line">
+          <label>PHONE NUMBER</label>
+        </div>
+        <div class="third-line">
+          <% if current_user.sms_two_factor.activated? %>
+              <i class="fa fa-check"></i>
+          <% else %>
+              <a href="<%= verify_sms_auth_path %>">
+                Set
+                <i class="fa fa-angle-right"></i>
+              </a>
+          <% end %>
+        </div>
+      </div>
+      <div class="custom-list-item">
+        <div class="first-line">
+          <i class="fa fa-qrcode"></i>
+        </div>
+        <div class="second-line">
+          <label>TWO-FACTOR AUTHENTICATION</label>
+        </div>
+        <div class="third-line">
+          <% if current_user.app_two_factor.activated? %>
+              <a href="<%= edit_verify_google_auth_path %>">
+                DISABLE
+                <i class="fa fa-angle-right"></i>
+              </a>
+          <% else %>
+              <a href="<%= verify_google_auth_path %>">
+                ENABLE
+                <i class="fa fa-angle-right"></i>
+              </a>
+          <% end %>
+        </div>
+      </div>
+      <div class="custom-list-item">
+        <div class="first-line">
+          <i class="fa fa-key"></i>
+        </div>
+        <div class="second-line">
+          <label>PASSWORD</label>
+        </div>
+        <div class="third-line">
+          <a href="
+          <%= if current_user.identity
+                edit_identity_path
+             else
+                new_authentications_identity_path
+             end
+          %>">
+
+          CHANGE
+          <i class="fa fa-angle-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="custom-list-item margin-bottom-30">
+        <div class="first-line">
+          <i class="fa fa-code"></i>
+        </div>
+        <div class="second-line">
+          <label>API TOKENS</label>
+        </div>
+        <div class="third-line">
+          <a href="<%= api_tokens_path%>">
+            SET
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </div>
+      </div>
+      <a class="btn btn-block btn-green" type="button" href="<%= root_path(anchor: 'market-statuses') %>">BUY OR SELL CRYPTO CURRENCY</a>
+      <a class="btn btn-block btn-blue" type="button" href="<%= signout_path %>">LOGOUT</a>
+    </div>
+    <!-- END SETTING PANEL -->
+  </div>
+</div>
+
+<%= render 'shared/footer' %>
+
+<%= javascript_include_tag 'mobile/common/common-functions' %>
+<%= javascript_include_tag 'mobile/common/menu' %>
+</div>
+<!-- END BODY -->

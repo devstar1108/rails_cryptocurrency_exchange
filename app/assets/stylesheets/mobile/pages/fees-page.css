@@ -1,0 +1,70 @@
+#offset {
+    margin-top: 54px;
+}
+
+.fees-panel{
+    margin-bottom: 0px;
+}
+
+.fees-panel .panel-heading {
+    font-size: 14px;
+    text-align: left;
+    text-transform: uppercase;
+    background-color: #212C3D;
+    color: #ffffff;
+}
+
+.fees-panel .panel-heading i {
+    padding-right: 4px;
+}
+
+.fees-panel .panel-body {
+    padding: 0px;
+}
+
+.fees-panel .panel-body table {
+    font-size: 12px;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 8px 15px;
+    border: none;
+}
+
+/*==============Tablet Part===========*/
+@media (min-width: 768px) {
+    #offset {
+        margin-top: 54px;
+    }
+
+    .fees-panel{
+        margin-bottom: 0px;
+        color: #5e5e5e;
+    }
+
+    .fees-panel .panel-heading {
+        font-size: 22px;
+        text-align: left;
+        text-transform: uppercase;
+        background-color: #212C3D;
+        color: #ffffff;
+    }
+
+    .fees-panel .panel-heading i {
+        padding-right: 19px;
+    }
+
+    .fees-panel .panel-body {
+        padding: 0px;
+    }
+
+    .fees-panel .panel-body table {
+        font-size: 20px;
+    }
+
+    .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+        padding: 15px 20px;
+        border: none;
+    }
+
+}

@@ -1,0 +1,11 @@
+li.dropdown
+  a.dropdown-toggle.js-activated href="#" role="button"
+    i.fa.fa-exchange
+    span#navlink-markets data-link="#{root_path(anchor: 'market-statuses')}" Trade Coins Here
+    span.caret
+  ul.dropdown-menu
+    - for market in @markets
+      li
+        = link_to market_path(market) do
+          = market.name
+          =< Global[market.id].ticker[:last]

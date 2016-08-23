@@ -1,0 +1,41 @@
+/#bid_entry.panel.panel-default
+/  .panel-body
+/    = form_for [market, order], :remote => true do |f|
+/      = f.hidden_field :ord_type
+/      .input-group.price
+/        label.input-group-addon = t('.price')
+/        span.label.label-danger.hint-price-disadvantage
+/        = f.text_field :price, class: 'form-control'
+/        span.input-group-addon = t(market.bid['currency'], scope: 'market.currency')
+/      .input-group.amount
+/        label.input-group-addon = t('.amount')
+/        = f.text_field :origin_volume, class: 'form-control'
+/        span.input-group-addon = t(market.ask['currency'], scope: 'market.currency')
+/      .input-group.total
+/        label.input-group-addon = t('.total')
+/        = f.text_field :total, class: 'form-control'
+/        span.input-group-addon = t(market.bid['currency'], scope: 'market.currency')
+/      = render partial: 'balance', locals: {currency: t(market.bid['currency'], scope: 'market.currency'), kind: 'bid'}
+/
+/      button.btn.btn-danger.btn-block.text-up type="submit" = t('.action', currency: t(market.ask['currency'], scope: 'market.currency'))
+/  = render partial: 'mask'
+
+#bid_entry.order-result-content-half.font-size-12
+  = form_for [market, order], :remote => true do |f|
+    = f.hidden_field :ord_type
+    .full-width-class.border-class.border-round-class.input-price-group
+      .float-left-class.width-40-class = 'Price'
+      .float-right-class.width-60-class
+        = f.text_field :price, class: 'border-none-class price-input'
+    .bitcoin-content.space-class
+    .full-width-class.border-class.border-round-class.input-price-group
+      .float-left-class.width-40-class = 'Amount'
+      .float-right-class.width-60-class
+        = f.text_field :origin_volume, class: 'border-none-class price-input'
+    .bitcoin-content.space-class
+    .full-width-class.border-none-class.input-price-group
+      .float-left-class.width-40-class = 'Total'
+      .float-right-class.width-60-class
+        = f.text_field :total, class: 'border-none-class price-input'
+
+    button.btn.buy-but-class.btn-block.text-up type="submit" = t('.action', currency: t(market.ask['currency'], scope: 'market.currency'))

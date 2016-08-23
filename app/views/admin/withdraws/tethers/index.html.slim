@@ -1,0 +1,11 @@
+- unless @one_tethers.empty?
+  .panel.panel-primary
+    .panel-heading: span = t('.one')
+    = render partial: 'table', locals: {tethers: @one_tethers}
+- unless @all_tethers.empty?
+  .panel.panel-success
+    .panel-heading: span = t('.all')
+    = render partial: 'table', locals: {tethers: @all_tethers}
+
+- if @all_tethers.empty? and @one_tethers.empty?
+  h3.text-info.text-center = t('.empty')

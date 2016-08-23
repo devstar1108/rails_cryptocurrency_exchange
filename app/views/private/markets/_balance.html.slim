@@ -1,0 +1,11 @@
+.row.row-tips
+  .col-xs-24.text-right
+    span.label.label-info.status-info
+    span.label.label-success.status-success
+    span.label.label-danger.status-danger
+    /- if kind == 'ask'
+    /  span.text-down.small Your Funds:
+    /- else
+    /  span.text-up.small Your Funds:
+    span.current-balance.number
+    span.unit = currency

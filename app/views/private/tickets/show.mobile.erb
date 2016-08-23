@@ -1,0 +1,59 @@
+<%= stylesheet_link_tag    'mobile/pages/setting-page' %>
+<%= stylesheet_link_tag    'mobile/pages/ticket-page' %>
+
+<!-- Body BEGIN -->
+<div class="landing_page"><!-- add class page-header-fixed, if you want to fix header -->
+
+  <%= render 'shared/header' %>
+  <div id="offset"></div>
+
+  <div class="content">
+    <div class="container">
+      <!-- BEGIN MY TICKETS PANEL -->
+      <div class="row custom-list ticket-section">
+        <div class="padding-top-20">
+          <label class="sub-title">MY TICKETS</label>
+          <a class="btn btn-back pull-right" href="<%= tickets_path %>">Back</a>
+          <%= link_to t("private.tickets.close"), close_ticket_path(@ticket), method: :patch, :confirm => t("private.tickets.close_confirm"), class: "btn btn-closeticket pull-right" %>
+        </div>
+
+        <div class="custom-list-item">
+              <div>
+                <label class="ticket-title"><%= "#{I18n.t('private.tickets.me')} - #{@ticket.title}" %></label>
+                <label class="ticket-time1"><i class="fa fa-clock-o"></i><span><%= time_ago_in_words @ticket.created_at %></span></label>
+              </div>
+              <div>
+                <p class="ticket-content">
+                  <%= @ticket.content%>
+                </p>
+              </div>
+            </div>
+        <% @comments.each do |c| %>
+            <div>
+              <label class="comment-title "><%= "#{member_tittle(c.author)}" %></label>
+              <label class="ticket-time1"><i class="fa fa-clock-o"></i><span><%= time_ago_in_words @ticket.created_at %></span></label>
+            </div>
+            <div>
+              <p class="ticket-content">
+                <%= @ticket.content%>
+              </p>
+            </div>
+            </div>
+        <% end %>
+
+        <%= simple_form_for @comment, html: {class: "submit-ticket-section"}, url: ticket_comments_path(@ticket.id) do |f| %>
+            <%= f.input :content, label: false,  input_html: { style: 'width:100%;', rows: 3 } %>
+            <%= f.button :wrapped %>
+        <% end %>
+
+        </div>
+      <!-- END SETTING PANEL -->
+    </div>
+  </div>
+
+  <%= render 'shared/footer' %>
+  <%= javascript_include_tag 'mobile/pages/ticket' %>
+  <%= javascript_include_tag 'mobile/common/common-functions' %>
+  <%= javascript_include_tag 'mobile/common/menu' %>
+</div>
+<!-- END BODY -->

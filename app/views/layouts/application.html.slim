@@ -1,0 +1,43 @@
+doctype html
+html lang="en"
+  head
+    link href="/favicon.ico" rel="shortcut icon"
+    = include_gon
+    - stylesheet = content_for?(:stylesheet) ? yield(:stylesheet) : "application"
+    = stylesheet_link_tag stylesheet, media: "all"
+    = javascript_include_tag "application"
+    = javascript_include_tag "locales/#{I18n.locale}"
+    = yield(:scripts) if content_for?(:scripts)
+    = render 'shared/html5'
+    = render 'shared/meta'
+    = csrf_meta_tags
+
+  body id='#{body_id}' data-lang="#{locale_name}"
+    #preloader
+      #status
+        .spinner
+    .body-wrapper
+      = render 'shared/alert'
+      - unless content_for(:header) == 'none'
+        - if content_for?(:header)
+          = yield(:header)
+        - else
+          = render 'shared/header', menu_styles: 'solid fixed'
+      .offset
+      .light-wrapper
+        .container.inner.tp40
+          = render 'shared/notification'
+          = render 'shared/flash'
+          - unless content_for(:frame) == 'none'
+            - if content_for?(:frame)
+              = yield(:frame)
+            - else
+              = render 'shared/frame'
+          - else
+              = yield
+      #push
+
+    - if content_for?(:footer)
+      = yield(:footer)
+    - else
+      = render 'shared/footer'

@@ -1,0 +1,785 @@
+.funds-coin-type {
+    width: 100%;
+    height: 50px;
+}
+
+.coin-icon {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+}
+
+.funds-coin-type-name {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #1a1919;
+    float: left;
+    text-transform: uppercase;
+}
+
+.funds-coin-type-more {
+    height: 40px;
+    font-size: 14px;
+    color: #1a1919;
+    line-height: 40px;
+    padding-right: 10px;
+    float: right;
+}
+
+.coin-img {
+    width: 26px;
+    height: 26px;
+}
+
+.label-icon-padding-val {
+    padding-left: 5px;
+}
+
+.label-icon-vale-padding-left {
+    padding-left: 10px;
+}
+
+.funds-property-labels {
+    font-size: 15px;
+}
+
+.labels-content-half {
+    width: 50%;
+}
+
+.revert-b-c {
+    background-color: #626262;
+    color: #ffffff;
+}
+
+.withdraw-content, .submit-types, .submit-content, .full-width-class {
+    width: 100%;
+}
+
+.submit-types {
+    float: left;
+}
+
+.deposit-tab-btn {
+    float: left;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: solid 1px #e3e3e3;
+    border-top-left-radius: 5px;
+    padding: 0px;
+    color: #333333;
+    background: #FFFFFF;
+}
+
+.deposit-tab-btn {
+    float: left;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: solid 1px #e3e3e3;
+    border-radius: 0px;
+    border-top-left-radius: 5px;
+    padding: 0px;
+    color: #333333;
+    background: #FFFFFF;
+}
+
+.deposit-tab-btn i {
+    color: #179c17;
+}
+
+.deposit-now .deposit-tab-btn {
+    border: solid 1px #179c17;
+    color: #FFFFFF;
+    background: #179c17;
+}
+
+.deposit-now .deposit-tab-btn i{
+    color: #FFFFFF;
+}
+
+.withdraw-tab-btn {
+    float: left;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: solid 1px #e3e3e3;
+    border-radius: 0px;
+    border-top-right-radius: 5px;
+    padding: 0px;
+    color: #333333;
+    background: #FFFFFF;
+}
+
+.withdraw-tab-btn i {
+    color: #c9413c;
+}
+
+.withdraw-now .withdraw-tab-btn {
+    border: solid 1px #c9413c;
+    color: #FFFFFF;
+    background: #c9413c;
+}
+
+.withdraw-now .withdraw-tab-btn i {
+    color: #FFFFFF;
+}
+
+.bg-green-c-w {
+    color: #ffffff;
+    background-color: #179c17;
+}
+
+.bg-w-c-green {
+    color: #179c17;
+    background-color: #ffffff;
+}
+
+.bg-red-c-white {
+    background-color: #c9413c;
+    color: #ffffff;
+}
+
+.bg-white-c-red {
+    background-color: #ffffff;
+    color: #c9413c;
+}
+
+.submit-content {
+    padding: 10px;
+    border: solid 1px #e3e3e3;
+    color: #7d7d7d;
+}
+
+.submit-label-div {
+    height: 25px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.float-bottom-class, .float-top-class {
+    width: 50%;
+    height: 100%
+}
+
+.float-bottom-class {
+    padding-top: 5px;
+    text-align: left;
+}
+
+.float-top-class {
+    text-align: right;
+}
+
+.manage-address-icon {
+    color: #286aa6;
+    font-size: 11px;
+}
+
+.manage-address-name {
+    color: #209a3e;
+    font-size: 11px;
+}
+
+.manage-address-name a {
+    color: #209a3e !important;
+}
+
+.label-types {
+    color: #292929;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.label-types-2 {
+    color: #292929;
+    height: 40px;
+    line-height: 40px;
+}
+
+.label-type {
+    clear: right;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 40px;
+    line-height: 40px;
+    border-left: solid 1px #e3e3e3;
+    border-right: solid 1px #e3e3e3;
+    border-bottom: solid 1px #e3e3e3;
+    color: #292929;
+}
+
+.send-code-btn {
+    background-color: #404c54;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 0px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.submit-btn {
+    background-color: #286aa6;
+    color: #ffffff;
+    border: solid 1px #1d5c95;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    font-size: 11px;
+    padding: 0px;
+}
+
+.submit-btn:hover, .send-code-btn:hover {
+    background-color: darkgray;
+    color: #ffffff;
+    border: solid 1px lightgray;
+}
+
+#label-type-list {
+    width: 88.9%;
+    position: absolute;
+    background: #ffffff;
+}
+
+.refresh-class, .copy-class {
+    height: 40px;
+}
+
+.width-90-class {
+    width: 85%;
+}
+
+.width-10-class {
+    width: 12%;
+}
+
+.deposit-code-group {
+    float: left;
+    width: 100%;
+}
+
+.deposit-code-group .btn-refresh {
+    margin: 0;
+    background-color: #286aa6;
+    height: 37px;
+    width: 37px;
+    border: none;
+    float: left;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    color: #ffffff;
+}
+
+.deposit-code-group .btn-refresh i {
+    font-size: 13px;
+}
+
+.deposit-code-group .text-code {
+    margin: 0;
+    height: 37px;
+    float: left;
+    width: 85%;
+    padding: 10px 8px;
+    font-size: 13px;
+    border-radius: 3px;
+    border: solid 1px #e3e3e3;
+    line-height: 17px;
+}
+
+.deposit-code-div .btn-file {
+    margin: 0;
+    background-color: #179c17;
+    height: 37px;
+    width: 37px;
+    border: none;
+    float: right;
+    border-radius: 3px;
+}
+
+.btn-file {
+    display: none;
+    color: #ffffff;
+}
+
+.qrcode-div {
+    margin-left: -10px;
+    margin-right: -10px;
+
+}
+
+.deposit-history-div {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.open-qrcode-img {
+    width: 140px;
+    height: 140px;
+}
+
+#open-qrcode-list {
+    clear: both;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#bitcoin-list-div {
+    position: relative;
+    margin: 0px 10px;
+    z-index: 1050;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+#bitcoin-list-div .close {
+    position: absolute;
+    right: 5px;
+    top: 15px;
+}
+
+.currency-item {
+    display: none;
+}
+.currency-item.selected {
+    display: block;
+}
+.details-container {
+    padding:0px 10px;
+}
+#two_factor_otp {
+    height: 40px;
+    line-height: 40px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.send-code-button {
+    position: relative;
+    display: table-cell;
+    padding: 0px;
+    height: 40px;
+    vertical-align: middle;
+}
+.modal-dialog {
+    width: 345px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+i.fa-trash-o {
+    color: #dd3e38;
+}
+th {
+    background: white !important;
+}
+.table-responsive {
+    border: none !important;
+}
+/*==============Tablet Part===========*/
+@media (min-width: 768px) {
+
+    body {
+        font-size: 22px;
+    }
+    .funds-coin-type {
+        width: 100%;
+        height: 80px;
+    }
+
+    .coin-icon {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
+        float: left;
+    }
+
+    .funds-coin-type-name {
+        height: 80px;
+        line-height: 80px;
+        font-size: 28px;
+        color: #1a1919;
+        float: left;
+        text-transform: uppercase;
+    }
+
+    .funds-coin-type-more {
+        height: 80px;
+        font-size: 28px;
+        color: #1a1919;
+        line-height: 80px;
+        padding-right: 26px;
+        float: right;
+    }
+
+    .coin-img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .label-icon-padding-val {
+        padding-left: 5px;
+    }
+
+    .label-icon-vale-padding-left {
+        padding-left: 10px;
+    }
+
+    .funds-property-labels {
+        font-size: 28px;
+        color: #5c5c5c;
+    }
+
+    .labels-content-half {
+        width: 50%;
+    }
+
+    .revert-b-c {
+        background-color: #626262;
+        color: #ffffff;
+    }
+
+    .withdraw-content, .submit-types, .submit-content, .full-width-class {
+        width: 100%;
+    }
+
+    .submit-types {
+        float: left;
+    }
+
+    .deposit-tab-btn {
+        float: left;
+        width: 50%;
+        height: 70px;
+        text-align: center;
+        line-height: 70px;
+        border: solid 1px #e3e3e3;
+        border-top-left-radius: 5px;
+        padding: 0px;
+        color: #333333;
+        background: #FFFFFF;
+    }
+
+    .deposit-tab-btn {
+        float: left;
+        width: 50%;
+        height: 70px;
+        text-align: center;
+        line-height: 70px;
+        border: solid 1px #e3e3e3;
+        border-radius: 0px;
+        border-top-left-radius: 5px;
+        padding: 0px;
+        color: #333333;
+        background: #FFFFFF;
+        font-size: 22px;
+    }
+
+    .deposit-tab-btn i {
+        color: #179c17;
+    }
+
+    .deposit-now .deposit-tab-btn {
+        border: solid 1px #179c17;
+        color: #FFFFFF;
+        background: #179c17;
+    }
+
+    .deposit-now .deposit-tab-btn i{
+        color: #FFFFFF;
+    }
+
+    .withdraw-tab-btn {
+        float: left;
+        width: 50%;
+        height: 70px;
+        text-align: center;
+        line-height: 70px;
+        border: solid 1px #e3e3e3;
+        border-radius: 0px;
+        border-top-right-radius: 5px;
+        padding: 0px;
+        color: #333333;
+        background: #FFFFFF;
+        font-size: 22px;
+    }
+
+    .withdraw-tab-btn i {
+        color: #c9413c;
+    }
+
+    .withdraw-now .withdraw-tab-btn {
+        border: solid 1px #c9413c;
+        color: #FFFFFF;
+        background: #c9413c;
+    }
+
+    .withdraw-now .withdraw-tab-btn i {
+        color: #FFFFFF;
+    }
+
+    .bg-green-c-w {
+        color: #ffffff;
+        background-color: #179c17;
+    }
+
+    .bg-w-c-green {
+        color: #179c17;
+        background-color: #ffffff;
+    }
+
+    .bg-red-c-white {
+        background-color: #c9413c;
+        color: #ffffff;
+    }
+
+    .bg-white-c-red {
+        background-color: #ffffff;
+        color: #c9413c;
+    }
+
+    .submit-content {
+        padding: 20px;
+        border: solid 1px #e3e3e3;
+        color: #7d7d7d;
+        font-size: 20px;
+    }
+
+    .submit-label-div {
+        height: 52px;
+        font-size: 22px;
+        margin-top: 30px;
+    }
+
+    .float-bottom-class, .float-top-class {
+        width: 50%;
+        height: 100%
+    }
+
+    .float-bottom-class {
+        padding-top: 5px;
+        text-align: left;
+    }
+
+    .float-top-class {
+        text-align: right;
+    }
+
+    .manage-address-icon {
+        color: #286aa6;
+        font-size: 22px;
+    }
+
+    .manage-address-name {
+        color: #209a3e;
+        font-size: 22px;
+    }
+    .form-control {
+        font-size: 22px;
+        height: 70px;
+        padding: 20px;
+    }
+
+    .label-types {
+        color: #292929;
+        padding-left: 0px;
+        padding-right: 0px;
+        height: 70px;
+        line-height: 70px;
+    }
+
+    .label-types-2 {
+        color: #292929;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .label-type {
+        clear: right;
+        padding-left: 5px;
+        padding-right: 5px;
+        height: 40px;
+        line-height: 40px;
+        border-left: solid 1px #e3e3e3;
+        border-right: solid 1px #e3e3e3;
+        border-bottom: solid 1px #e3e3e3;
+        color: #292929;
+    }
+
+    .send-code-btn {
+        background-color: #404c54;
+        color: #ffffff;
+        text-align: center;
+        width: 100%;
+        height: 70px;
+        font-size: 22px;
+        border-radius: 0px;
+        border-bottom-right-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+
+    .submit-btn {
+        background-color: #286aa6;
+        color: #ffffff;
+        border: solid 1px #1d5c95;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 70px;
+        height: 70px;
+        font-size: 22px;
+        padding: 0px;
+    }
+
+    .submit-btn:hover, .send-code-btn:hover {
+        background-color: darkgray;
+        color: #ffffff;
+        border: solid 1px lightgray;
+    }
+
+    #label-type-list {
+        width: 88.9%;
+        position: absolute;
+        background: #ffffff;
+    }
+
+    .refresh-class, .copy-class {
+        height: 40px;
+    }
+
+    .width-90-class {
+        width: 85%;
+    }
+
+    .width-10-class {
+        width: 12%;
+    }
+
+    .deposit-code-group {
+        float: left;
+        width: 100%;
+    }
+
+    .deposit-code-group .btn-refresh {
+        margin: 0;
+        background-color: #286aa6;
+        height: 70px;
+        width: 70px;
+        border: none;
+        float: left;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        color: #ffffff;
+    }
+
+    .deposit-code-group .btn-refresh i {
+        font-size: 22px;
+    }
+
+    .deposit-code-group .text-code {
+        margin: 0;
+        height: 70px;
+        float: left;
+        width: 85%;
+        padding: 10px 8px;
+        font-size: 22px;
+        border-radius: 3px;
+        border: solid 1px #e3e3e3;
+        line-height: 50px;
+    }
+
+    .deposit-code-div .btn-file {
+        margin: 0;
+        background-color: #179c17;
+        height: 70px;
+        width: 70px;
+        border: none;
+        float: right;
+        border-radius: 3px;
+    }
+
+    .btn-file {
+        color: #ffffff;
+    }
+
+    .qrcode-div {
+        margin-left: -20px;
+        margin-right: -20px;
+
+    }
+
+    .deposit-history-div {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .open-qrcode-img {
+        width: 140px;
+        height: 140px;
+    }
+
+    #open-qrcode-list {
+        clear: both;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    #bitcoin-list-div {
+        position: relative;
+        margin: 0px 10px;
+        z-index: 1050;
+        background-color: #ffffff;
+        border-radius: 3px;
+    }
+
+    #bitcoin-list-div .close {
+        position: absolute;
+        right: 25px;
+        top: 30px;
+        font-size: 26px;
+    }
+
+    .currency-item {
+        display: none;
+    }
+    .currency-item.selected {
+        display: block;
+    }
+    .details-container {
+        padding:0px 10px;
+    }
+    #two_factor_otp {
+        height: 70px;
+        line-height: 70px;
+        margin: 0px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .send-code-button {
+        position: relative;
+        display: table-cell;
+        padding: 0px;
+        height: 40px;
+    }
+
+    .modal-dialog {
+        width: 500px !important;
+        max-width: 600px !important;
+    }
+
+}

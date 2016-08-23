@@ -1,0 +1,11 @@
+- unless @one_moneros.empty?
+  .panel.panel-primary
+    .panel-heading: span = t('.one')
+    = render partial: 'table', locals: {moneros: @one_moneros}
+- unless @all_moneros.empty?
+  .panel.panel-success
+    .panel-heading: span = t('.all')
+    = render partial: 'table', locals: {moneros: @all_moneros}
+
+- if @all_moneros.empty? and @one_moneros.empty?
+  h3.text-info.text-center = t('.empty')

@@ -1,0 +1,29 @@
+<%= simple_form_for identity, :url => '/auth/identity/callback', :method => :post, html: { class: '' } do |f| %>
+    <%= f.input :email, :input_html => {:name => 'auth_key'}, label: t('simple_form.labels.session.email'), placeholder: t('simple_form.placeholders.session.email'), label: false %>
+    <%= f.input :password, :as => 'password', :input_html => {:name => 'password'}, label: t('simple_form.labels.session.password'), placeholder: t('simple_form.placeholders.session.password'), hint: false, label: false %>
+    <% if require_captcha %>
+        <%= f.input :captcha, required: true, label: t('simple_form.labels.session.captcha') do %>
+          <%= show_simple_captcha %>
+        <% end %>
+    <% end %>
+    <div class="form-group">
+          <div class="margin-bottom-25">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Remember me
+              </label>
+              <%= link_to t('.reset_password'), new_reset_password_path, class: 'pull-right' %>
+            </div>
+          </div>
+        </div>
+
+    <div class="form-group">
+      <%= f.button :submit, t('header.signin'), class: 'btn btn-primary btn-block' %>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-12 text-center">
+        <label>New to Crycen?<a href="javascript:openSignupBox()" > SIGN UP</a></label>
+      </div>
+    </div>
+
+<% end %>

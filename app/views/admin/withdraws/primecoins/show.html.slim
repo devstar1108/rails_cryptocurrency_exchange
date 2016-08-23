@@ -1,0 +1,30 @@
+.row
+  .col-xs-12
+    .panel.panel-primary
+      .panel-heading
+        span = t('.withdraw', sn: @primecoin.id)
+      .panel-body
+        = description_for :withdraw do
+          = item_for @primecoin, :id
+          = item_for @primecoin, :created_at
+          = item_for @primecoin, :aasm_state_text
+          hr.split
+          = item_for @primecoin.member, :name
+          = item_for @primecoin, :fund_extra
+          = item_for @primecoin, :fund_uid do
+            span = @primecoin.fund_uid.truncate(22)
+          = item_for @primecoin, :amount
+          hr.split
+          = item_for @primecoin, :remark
+          hr.split
+          ul.list-inline.pull-right
+            - if @primecoin.may_reject?
+              li
+                = link_to t('.reject'), url_for([:admin, @primecoin]), class: 'btn btn-danger', method: 'DELETE', confirm: t('.reject_confirm')
+            - if @primecoin.may_process?
+              li
+                = link_to t('.process'), url_for([:admin, @primecoin]), class: 'btn btn-primary', method: 'PATCH'
+
+  .col-xs-12
+    = render partial: 'shared/admin/member', locals: {member: @primecoin.member}
+    = render partial: 'shared/admin/account', locals: {account: @primecoin.account}

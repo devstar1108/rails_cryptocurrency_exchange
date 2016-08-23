@@ -1,0 +1,13 @@
+<% trade_state = if @origin_volume == @volume then 'new' else 'partial' %>
+
+<tr data-id="<%= @id %>" data-kind="<%= @kind %>" class="order <%= @kind %>">
+  <td class='price text-right col-xs-4 <%= formatter.trend @kind %>'>
+    <span><%- formatter.mask_fixed_price @price %></span>
+  </td>
+  <td class='volume text-right col-xs-4'>
+    <span><%- formatter.mask_fixed_volume @volume %></span>
+  </td>
+  <td class='amount text-right col-xs-4'>
+    <span><%- formatter.amount @volume, @price %></span>
+  </td>
+</tr>

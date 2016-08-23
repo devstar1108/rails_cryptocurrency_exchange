@@ -1,0 +1,18 @@
+#sign-in-sign-up.inverse-wrapper.inner
+  .container.inner
+    .headline.text-center
+      h2 Login or Sign up here
+
+    .row
+      .col-sm-12.col-sm-offset-6
+        #sign-in-sign-up-tabs.tabs.tabs-top.left.bordered.tab-container
+          ul.etabs style="text-align: center;"
+            li.tab
+              a href="#sign-in" Sign In
+            li.tab
+              a href="#sign-up" Sign Up
+          .panel-container
+            #sign-in.tab-block
+              = render partial: 'shared/sign_in', locals: { identity: Identity.new, require_captcha: false }
+            #sign-up.tab-block
+              = render partial: 'shared/sign_up', locals: { identity: Identity.new }

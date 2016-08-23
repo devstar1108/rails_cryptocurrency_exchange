@@ -1,0 +1,732 @@
+.font-color-light-gray {
+    color: #5b5b5b;
+}
+
+.octacoin-market-types-name-left {
+    /*text-align: center;*/
+    padding-left: 10px;
+    line-height: 35px;
+    width: 92%;
+    float: left;
+}
+
+.octacoin-market-types-name-right {
+    text-align: center;
+    line-height: 35px;
+    width: 8%;
+    float: left;
+}
+
+.octacoin-market-types {
+    text-align: center;
+    line-height: 35px;
+    border: solid 1px #efefef;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.octacoin-market-types:hover, .octacoin-market-types:focus {
+    background-color: #ddd;
+}
+
+.octacoin-market-options {
+    border: solid 1px #efefef;
+    border-radius: 5px;
+}
+
+.octacoin-market-option {
+    padding-left: 8px;
+    padding-right: 8px;
+    line-height: 30px;
+    height: 30px;
+    border: solid 1px #efefef;
+    background: #ffffff;
+}
+
+.octacoin-market-option-right {
+    float: left;
+}
+
+.octacoin-market-option-right {
+    float: right;
+}
+
+.content-less-half-left {
+    width: 46%;
+    float: left;
+}
+
+.content-less-half-right {
+    width: 46%;
+    float: right;
+}
+
+.octacoin-market-price-type {
+    border: solid 1px #efefef;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.octacoin-market-price-options {
+    border: solid 1px #efefef;
+    border-radius: 5px;
+    position: absolute;
+    width: 21%;
+}
+
+.octacoin-market-price-name-left {
+    text-align: center;
+    line-height: 35px;
+    width: 70%;
+    float: left;
+    font-size: 30px;
+    color: #286aa6;
+}
+
+.octacoin-market-price-name-right {
+    text-align: center;
+    line-height: 35px;
+    width: 30%;
+    float: left;
+}
+
+.description-class {
+    font-size: 14px;
+}
+
+.percent-class {
+    font-size: 21px;
+    font-weight: 600;
+    color: #3d9c17;
+    line-height: 0.7;
+}
+
+.chart-ticker {
+    color: #777;
+    background-color: rgba(28,28,28,0.8);
+    border: 1px solid rgba(179, 175, 156, 0.28);
+    padding: 6px 0 6px 6px;
+    font-size: 11px;
+}
+
+.chart-ticker > div {
+    display: inline-block; width: 70px;
+}
+
+.chart-ticker > div .tooltip-ma {
+    width: 76px; margin-top: 3px;
+}
+
+.chart-ticker > div .tooltip-ticker {
+    margin-top: 5px;
+}
+
+.chart-ticker ul .list-inline {
+    margin: 6px 0 0 0;
+}
+
+.chart-ticker ul .list-inline li {
+    padding: 0 6px 0 0;
+}
+
+.chart-ticker span .t-title {
+    display: block;
+    text-align: right;
+}
+
+.chart-ticker span .t-value {
+    color: #ccc !important;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    text-align: right;
+    margin-right: 15px;
+}
+
+#public-last tr td div i {
+    display: none;
+}
+
+.nav-description-type {
+    width: 33.33%;
+    font-size: 12px;
+    text-align: center;
+    border-left: solid 1px #e3e3e3;
+    height: 30px;
+    line-height: 30px;
+}
+
+.public-open-orders {
+    border-radius: 5px;
+    border: solid 1px #e3e3e3;
+    height: 35px;
+}
+
+.public-order-top {
+    float: left;
+    text-align: center;
+    width: 100%;
+    padding-left: 15px;
+}
+
+.public-order-bottom {
+    height: 12px;
+}
+
+.public-order-top-left-center {
+    height: 30px;
+    width: 35px;
+    float: left;
+    line-height: 30px;
+}
+
+.public-order-top-right-center {
+    height: 30px;
+    width: 80px;
+    float: left;
+    line-height: 30px;
+}
+
+.content-vertical-space {
+    width: 2%;
+    height: 35px;
+    float: left;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.font-size-20 {
+    font-size: 23px;
+    font-weight: 400;
+}
+
+
+
+.font-color-red {
+    color: #c9413c;
+}
+
+.bit-result-div {
+    border: solid 1px #155788;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-top: 0px;
+}
+
+.order-result-align-center {
+    text-align: center;
+}
+
+.font-color-green {
+    color: #179c17;
+}
+
+.order-half-width-but {
+    width: 100%;
+    padding: 5px;
+    height: 30px;
+}
+
+.order-half-width-str {
+    width: 100%;
+}
+.order-result-content-half{
+    float: left;
+    width: 49%;
+}
+
+.content-vertical-space-height-20 {
+    float: left;
+    width: 2%;
+    height: 20px;
+}
+
+.sell-but-class {
+    background-color: #c9413c;
+    border: solid 1px #a32621;
+    color: #ffffff;
+    text-align: center;
+    height: 32px;
+}
+
+.buy-but-class {
+    background-color: #179c17;
+    border: solid 1px #148314;
+    color: #ffffff;
+    text-align: center;
+    height: 32px;
+}
+
+.sell-but-class:hover, .sell-but-class:focus, .buy-but-class:hover, .buy-but-class:focus {
+    background-color: gray;
+    border-color: lightgray;
+}
+
+.funds-div {
+    width: 100%;
+    overflow: hidden;
+}
+
+.funds-title {
+    border-bottom: solid 1px #e3e3e3;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 7px;
+    background-color: #1b669d;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.funds-body {
+    float: left;
+    width: 100%;
+}
+
+.funds-left-body {
+    float: left;
+    width: 50%;
+    border-right: solid 1px #e3e3e3;
+    padding: 10px;
+}
+
+.funds-right-body {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.funds-div-type {
+    text-align: center;
+    font-size: 25px;
+}
+
+.funds-div-detail {
+    text-align: center;
+}
+
+.funds-div-detail-value {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.open-last-div {
+    width: 100%;
+}
+
+.open-last-ul {
+    /*float: left;*/
+    color: #5b5b5b;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top: solid 1px #e3e3e3;
+    border-left: solid 1px #e3e3e3;
+    border-right: solid 1px #e3e3e3;
+}
+.open-li {
+    padding: 8px;
+    text-align: center;
+    width: 49.689%;
+    margin:0;
+    font-size: 12px;
+}
+.open-li:hover, .open-li:focus {
+    background-color: #1b669d;
+    color: #ffffff;
+}
+
+.crycen_service_title {
+    text-align: center;
+    height: 40px;
+    font-weight: 500;
+    font-size: larger;
+    line-height: 40px;
+}
+
+.authentication_class {
+    width: 100%;
+    float: left;
+}
+
+.authentication-but {
+    float: left;
+    width: 45%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.authentication-or {
+    float: left;
+    width: 10%;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+
+.authentication-but:hover, .authentication-but:focus {
+    background-color: gray;
+    color: #ffffff;
+}
+
+.custom-ul > li:hover, .custom-ul > li:focus {
+    background-color: #1b669d;
+    color: #ffffff;
+}
+
+.custom-border {
+    border: solid 1px #155788;
+}
+
+.li-selected {
+    background-color: #1b669d;
+    color: #ffffff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.octacoin-values {
+    font-size: 20px;
+    color: #286aa6;
+    width: 100%;
+}
+
+.border-none-class {
+    border: none;
+}
+
+.input-price-group {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.price-input {
+    width: 100%;
+    text-align: right;
+    height: 16px;
+    margin-top: 7px;
+    line-height: 16px;
+}
+
+.bids tr td, .all-trades tr td, .asks tr td {
+    text-align: center;
+    width: 33.33%;
+}
+
+.bitcoin-type-li {
+    width: 16.2%;
+    text-align: center;
+}
+
+#bitcoin-type-nav {
+    padding: 9px 10px;
+}
+
+.market-list-class {
+    padding: 4px 0px !important;
+    border-radius: 8px !important;
+}
+
+.login-section h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+
+}
+
+.login-section span {
+    font-size: 10px;
+    color: #5b5b5b;
+    text-transform: uppercase;
+    padding: 0 8px;
+}
+
+.btn-signin {
+    color: #262626;
+    background-color: #fff;
+    border-color: #e3e3e3;
+    width: 150px;
+    height: 44px;
+    line-height: 30px;
+}
+
+.btn-signin:hover, .btn-signin:focus, .btn-signin:active, .btn-signin.active, .open > .dropdown-toggle.btn-signin {
+    color: #262626;
+    background-color: #e6e6e6;
+    border-color: #adadad
+}
+
+.btn-signin:active, .btn-signin.active, .open > .dropdown-toggle.btn-signin {
+    background-image: none
+}
+
+.btn-signin.disabled, .btn-signin[disabled], fieldset[disabled] .btn-signin, .btn-signin.disabled:hover, .btn-signin[disabled]:hover, fieldset[disabled] .btn-signin:hover, .btn-signin.disabled:focus, .btn-signin[disabled]:focus, fieldset[disabled] .btn-signin:focus, .btn-signin.disabled:active, .btn-signin[disabled]:active, fieldset[disabled] .btn-signin:active, .btn-signin.disabled.active, .btn-signin[disabled].active, fieldset[disabled] .btn-signin.active {
+    background-color: #fff;
+    border-color: #ccc
+}
+
+.btn-signup {
+    color: #262626;
+    background-color: #fff;
+    border-color: #e3e3e3;
+    width: 150px;
+    height: 44px;
+    line-height: 30px;
+}
+
+.btn-signup:hover, .btn-signup:focus, .btn-signup:active, .btn-signup.active, .open > .dropdown-toggle.btn-signup {
+    color: #262626;
+    background-color: #e6e6e6;
+    border-color: #adadad
+}
+
+.btn-signup:active, .btn-signup.active, .open > .dropdown-toggle.btn-signup {
+    background-image: none
+}
+
+.btn-signup.disabled, .btn-signup[disabled], fieldset[disabled] .btn-signup, .btn-signup.disabled:hover, .btn-signup[disabled]:hover, fieldset[disabled] .btn-signup:hover, .btn-signup.disabled:focus, .btn-signup[disabled]:focus, fieldset[disabled] .btn-signup:focus, .btn-signup.disabled:active, .btn-signup[disabled]:active, fieldset[disabled] .btn-signup:active, .btn-signup.disabled.active, .btn-signup[disabled].active, fieldset[disabled] .btn-signup.active {
+    background-color: #fff;
+    border-color: #ccc
+}
+#two_factor_otp {
+    height: 40px;
+    line-height: 40px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.send-code-button {
+    position: relative;
+    display: table-cell;
+    padding: 0px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.send-code-btn {
+    background-color: #404c54;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 0px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+
+@media screen and (min-width: 768px){
+
+    .container {
+        font-size: 26px;
+    }
+    .bitcoin-content {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    .bitcoin-type-li {
+        width: 16.2%;
+        text-align: center;
+        font-size: 26px;
+        border-radius: 8px;
+    }
+    #bitcoin-type-nav {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .market-list-class {
+        border-radius: 8px;
+        color: #5b5b5b;
+    }
+    .nav-pills > li > a {
+        border-radius: 8px;
+    }
+    .li-selected {
+        background-color: #1b669d;
+        color: #ffffff;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+    .octacoin-market-types {
+        text-align: center;
+        border: solid 1px #efefef;
+        border-radius: 8px;
+        height: 58px;
+        line-height: 58px;
+        font-size: 28.6px;
+        padding-top: 13px;
+    }
+    .octacoin-market-option {
+        padding-left: 14px;
+        padding-right: 14px;
+        line-height: 58px;
+        height: 58px;
+        border: solid 1px #efefef;
+        background: #ffffff;
+    }
+    .octacoin-market-price-type {
+        height: 58px;
+    }
+    .octacoin-market-price-name-left {
+        line-height: 58px;
+        font-size: 28.6px;
+    }
+    .octacoin-market-price-name-right {
+        line-height: 58px;
+    }
+    .description-class {
+        font-size: 18.6px;
+    }
+    .change-value {
+        font-size: 20px;
+    }
+    .octacoin-market-types-name-left {
+        padding-left: 15px;
+        font-size: 20px;
+    }
+    .public-open-orders {
+        padding-top: 10px;
+        height: 58px;
+    }
+    .nav-description-type {
+        font-size: 20px;
+        height: 58px;
+        line-height: 58px;
+    }
+    #market_trades_wrapper {
+        font-size: 20px;
+    }
+    .public-order-top-left-center {
+        height: 30px;
+        font-size: 22px;
+        line-height: 30px;
+        width: 50px;
+    }
+    .public-order-top-right-center {
+        width: 200px;
+        font-size: 52.4px;
+    }
+    .font-size-10 {
+        font-size: 18px;
+    }
+    .public-order {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .font-size-12 {
+        font-size: 22px;
+    }
+    .public-order-top {
+        padding-left: 30px;
+    }
+    .input-price-group {
+        height: 58px;
+        line-height: 58px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .price-input {
+        text-align: right;
+        height: 30px;
+        margin-top: 7px;
+        line-height: 30px;
+    }
+    .buy-but-class, .sell-but-class {
+        font-size: 22px;
+        height: 58px;
+    }
+    .space-class {
+        height: 10px;
+    }
+    .funds-title {
+        font-size: 22px;
+    }
+    .funds-div-type {
+        font-size: 55px;
+    }
+    .font-size-15 {
+        font-size: 55px;
+    }
+    .open-li {
+        font-size: 22px;
+    }
+    .custom-border, .bit-result-div {
+        border: solid 2px #155788;
+    }
+
+    .login-section h4 {
+        font-size: 19px;
+        text-transform: uppercase;
+        margin-bottom: 0px;
+
+    }
+
+    .login-section span {
+        font-size: 15px;
+        color: #5b5b5b;
+        text-transform: uppercase;
+        padding: 0 40px;
+    }
+
+    .btn-signin {
+        color: #262626;
+        background-color: #fff;
+        border-color: #e3e3e3;
+        width: 300px;
+        height: 80px;
+        line-height: 66px;
+        font-size: 19px;
+    }
+
+    .btn-signin:hover, .btn-signin:focus, .btn-signin:active, .btn-signin.active, .open > .dropdown-toggle.btn-signin {
+        color: #262626;
+        background-color: #e6e6e6;
+        border-color: #adadad
+    }
+
+    .btn-signin:active, .btn-signin.active, .open > .dropdown-toggle.btn-signin {
+        background-image: none
+    }
+
+    .btn-signin.disabled, .btn-signin[disabled], fieldset[disabled] .btn-signin, .btn-signin.disabled:hover, .btn-signin[disabled]:hover, fieldset[disabled] .btn-signin:hover, .btn-signin.disabled:focus, .btn-signin[disabled]:focus, fieldset[disabled] .btn-signin:focus, .btn-signin.disabled:active, .btn-signin[disabled]:active, fieldset[disabled] .btn-signin:active, .btn-signin.disabled.active, .btn-signin[disabled].active, fieldset[disabled] .btn-signin.active {
+        background-color: #fff;
+        border-color: #ccc
+    }
+
+    .btn-signup {
+        color: #262626;
+        background-color: #fff;
+        border-color: #e3e3e3;
+        width: 300px;
+        height: 80px;
+        line-height: 66px;
+        font-size: 19px;
+    }
+
+    .btn-signup:hover, .btn-signup:focus, .btn-signup:active, .btn-signup.active, .open > .dropdown-toggle.btn-signup {
+        color: #262626;
+        background-color: #e6e6e6;
+        border-color: #adadad
+    }
+
+    .btn-signup:active, .btn-signup.active, .open > .dropdown-toggle.btn-signup {
+        background-image: none
+    }
+
+    .btn-signup.disabled, .btn-signup[disabled], fieldset[disabled] .btn-signup, .btn-signup.disabled:hover, .btn-signup[disabled]:hover, fieldset[disabled] .btn-signup:hover, .btn-signup.disabled:focus, .btn-signup[disabled]:focus, fieldset[disabled] .btn-signup:focus, .btn-signup.disabled:active, .btn-signup[disabled]:active, fieldset[disabled] .btn-signup:active, .btn-signup.disabled.active, .btn-signup[disabled].active, fieldset[disabled] .btn-signup.active {
+        background-color: #fff;
+        border-color: #ccc
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .public-order-top {
+        padding-left: 75px;
+    }
+}

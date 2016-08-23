@@ -1,0 +1,85 @@
+
+<%= stylesheet_link_tag    'mobile/pages/fees-page' %>
+<!-- Body BEGIN -->
+<div class="landing_page"><!-- add class page-header-fixed, if you want to fix header -->
+
+  <%= render 'shared/header' %>
+
+  <div id="offset"></div>
+
+  <div class="content">
+    <div class="container">
+      <!-- BEGIN TRADING FEE PANEL -->
+      <div class="row panel fees-panel">
+        <div class="panel-heading">
+          <div>
+            <i class="fa fa-line-chart"></i>
+            TRADING FEE'S
+          </div>
+        </div>
+        <div class="panel-body">
+          <table class="table table-striped table-hover outercenter">
+            <thead>
+            <tr>
+              <th>Market</th>
+              <th>Ask</th>
+              <th>Bid</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% @markets.each do |market| %>
+                <tr>
+                  <td class="col-xs-4"><%= market.name %></td>
+                  <td class="col-xs-4"><%= market.ask["fee"] * 100 || "0.0" %>&nbsp;%</td>
+                  <td class="col-xs-4"><%= market.bid["fee"] * 100 || "0.0" %>&nbsp;%</td>
+                </tr>
+            <% end %>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+      <!-- END TRADING FEE PANEL -->
+
+      <!-- BEGIN DEPOSIT & WITHDRAW FEE PANEL -->
+      <div class="row panel fees-panel">
+        <div class="panel-heading">
+          <div>
+            <i class="fa fa-minus-square-o"></i>
+            DEPOSIT AND WITHDRAW FEE’S
+          </div>
+        </div>
+        <div class="panel-body margin-bottom-60">
+          <table class="table table-striped table-hover outercenter">
+            <thead>
+            <tr>
+              <th>Market</th>
+              <th>Deposit</th>
+              <th>Withdraw</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% @currencies.each_with_index do |currency, index| %>
+                <tr>
+                  <td class="col-xs-4"><%= currency[:code].upcase %></td>
+                  <td class="col-xs-4"><%= @deposit_channels[index][:fee] || "0.0" %></td>
+                  <td class="col-xs-4"><%= @withdraw_channels[index][:fee] || "0.0" %></td>
+                </tr>
+            <% end %>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+      <!-- END DEPOSIT & WITHDRAW FEE PANEL -->
+    </div>
+  </div>
+
+
+  <%= render 'shared/footer' %>
+
+  <%= javascript_include_tag 'mobile/common/common-functions' %>
+  <%= javascript_include_tag 'mobile/common/menu' %>
+
+</div>
+<!-- END BODY -->

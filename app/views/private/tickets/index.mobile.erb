@@ -1,0 +1,46 @@
+<%= stylesheet_link_tag    'mobile/pages/setting-page' %>
+<%= stylesheet_link_tag    'mobile/pages/ticket-page' %>
+
+<!-- Body BEGIN -->
+<div class="landing_page"><!-- add class page-header-fixed, if you want to fix header -->
+
+  <%= render 'shared/header' %>
+  <div id="offset"></div>
+
+  <div class="content">
+    <div class="container">
+      <!-- BEGIN MY TICKETS PANEL -->
+      <div class="row custom-list ticket-section">
+        <div class="padding-top-20">
+          <label class="sub-title">MY TICKETS</label>
+          <a class="btn btn-back pull-right" href="<%= new_ticket_path %>">New ticket</a>
+          <% if params[:closed] %>
+            <a class="btn btn-closeticket pull-right" href="<%= tickets_path %>">View opened tickets</a>
+          <% else %>
+            <a class="btn btn-closeticket pull-right" href="<%= tickets_path(closed: true) %>">View closed tickets</a>
+          <% end %>
+        </div>
+        <% @tickets.each do |t| %>
+            <div class="custom-list-item">
+              <div>
+                <label class="ticket-title"><%= link_to t.title_for_display, ticket_path(t) %></label>
+                <label class="ticket-time1"><i class="fa fa-clock-o"></i><span><%= time_ago_in_words t.created_at %></span></label>
+              </div>
+              <div>
+                <p class="ticket-content">
+                  <%= t.content%>
+                </p>
+              </div>
+            </div>
+        <% end %>
+      </div>
+      <!-- END SETTING PANEL -->
+    </div>
+  </div>
+
+  <%= render 'shared/footer' %>
+
+  <%= javascript_include_tag 'mobile/common/common-functions' %>
+  <%= javascript_include_tag 'mobile/common/menu' %>
+</div>
+<!-- END BODY -->

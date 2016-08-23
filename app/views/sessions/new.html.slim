@@ -1,0 +1,9 @@
+= content_for :header, 'none'
+= content_for :frame, 'none'
+
+.row
+  .col-sm-8.col-sm-offset-8
+    #sign-in-form
+      h1.text-center Log In
+
+      = render partial: 'shared/sign_in', locals: { identity: @identity, require_captcha: require_captcha? }
